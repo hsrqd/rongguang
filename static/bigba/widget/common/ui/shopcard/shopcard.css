@@ -1,0 +1,427 @@
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+.shopcards-list {
+  zoom: 1;
+}
+.shopcards-list .list-item {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+  border: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+.shopcards-list .list-item .shop-rest-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 230px;
+  height: 262px;
+  overflow: hidden;
+  background: url("/static/images/shop_rest.png") no-repeat;
+  z-index: 10;
+  zoom: 1;
+}
+.shopcards-list .list-item .shop-closed-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 230px;
+  height: 262px;
+  overflow: hidden;
+  background: url("/static/images/shop_closed.png") no-repeat;
+  z-index: 10;
+  zoom: 1;
+}
+.shopcards-list .list-item .newshop {
+  background: url("/static/images/newShop_icon.png") no-repeat;
+  font-size: 12px;
+  height: 35px;
+  left: 10px;
+  text-align: center;
+  position: absolute;
+  top: -3px;
+  width: 42px;
+  color: #fff;
+  line-height: 3;
+  z-index: 8;
+}
+.shopcards-list .list-item .newshop span {
+  position: relative;
+  left: 0px;
+  top: 0;
+}
+.shopcards-list .list-item .shopimg {
+  width: 228px;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  zoom: 1;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.shopcards-list .list-item .shopimg img {
+  display: block;
+  margin: auto;
+  border: 0;
+}
+.shopcards-list .list-item .shopimg .collected {
+  background-color: #FF2D4B;
+  background: url("/static/images/collect_icon.png") no-repeat;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  height: 29px;
+  width: 30px;
+}
+.shopcards-list .list-item .shopdesc {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
+  width: 228px;
+  margin: -20px 0 0 0;
+  text-align: center;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  filter: alpha(opacity=50);
+  color: #ffffff;
+}
+.shopcards-list .list-item .shopdesc span {
+  color: #eddd5a;
+  font-weight: bold;
+}
+.shopcards-list .list-item .title {
+  width: 200px;
+  padding: 10px 14px 0;
+  overflow: hidden;
+  /*text-overflow: ellipsis;
+            white-space: nowrap;*/
+  font-size: 15px;
+}
+.shopcards-list .list-item .feature {
+  height: 22px;
+  margin: 5px 12px 10px;
+  width: 204px;
+  overflow: hidden;
+}
+.shopcards-list .list-item .info {
+  padding: 10px 15px 0;
+  font-size: 12px;
+  color: #808080;
+}
+.shopcards-list .list-item .info .f-col {
+  float: left;
+}
+.shopcards-list .list-item .info .f-col .item-value {
+  position: relative;
+}
+.shopcards-list .list-item .info .f-col .item-line {
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 110%;
+  border-top: 1px solid #6B6B6B;
+}
+.shopcards-list .list-item .info .f-star {
+  margin-left: -4px;
+}
+.shopcards-list .list-item .info .f-sale {
+  margin-left: 10px;
+}
+.shopcards-list .list-item .info .f-sale span {
+  margin: 0 2px;
+}
+.shopcards-list .list-item .info .f-price {
+  width: 67px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.shopcards-list .list-item .info .f-time {
+  height: 16px;
+  position: absolute;
+  right: 5px;
+}
+.shopcards-list .list-item .s-info {
+  width: 193px;
+  padding-left: 20px;
+}
+.shopcards-list .list-item .f-info {
+  width: 198px;
+}
+.shopcards-list .online:hover .shopimg {
+  opacity: 0.8;
+}
+.shopcards-list .offline {
+  cursor: default;
+}
+.shopcards-list .overlay {
+  position: absolute;
+  display: none;
+  width: 250px;
+  left: 228px;
+  top: -1px;
+  zoom: 1;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ECECEC;
+  cursor: auto;
+  z-index: 100;
+  -moz-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -webkit-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -o-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -ms-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+}
+.shopcards-list .overlay .o-con {
+  width: 200px;
+  padding: 0px 30px 20px 20px;
+}
+.shopcards-list .overlay .o-con .shop-title {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+.shopcards-list .overlay .o-con .shop-feature {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.shopcards-list .overlay .o-con .shop-feature li {
+  padding-top: 7px;
+  overflow: hidden;
+  zoom: 1;
+}
+.shopcards-list .overlay .o-con .shop-feature em {
+  float: left;
+}
+.shopcards-list .overlay .o-con .shop-feature p {
+  float: left;
+  width: 170px;
+  padding: 3px 0px 0px 5px;
+  overflow: hidden;
+  color: #808080;
+}
+.shopcards-list .overlay .o-con .shop-notice {
+  margin-top: 10px;
+}
+.shopcards-list .overlay .o-con .shop-notice h2 {
+  font-weight: normal;
+  height: 36px;
+  line-height: 30px;
+}
+.shopcards-list .overlay .o-con .shop-notice p {
+  color: #808080;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-wrap: break-word;
+}
+.shopcards-list .overlay .o-arrow {
+  position: absolute;
+  left: -7px;
+  top: 20px;
+  width: 7px;
+  height: 13px;
+  background: url("/static/images/overlay_arrow_left.png?__sprite") no-repeat;
+}
+.shopcards-list .overlay .esc-collection {
+  position: absolute;
+  z-index: 11;
+  display: inline-block;
+  right: 0;
+  top: 10px;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  width: 60px;
+  background: #ff2d4b;
+  font-size: 15px;
+  color: #fff;
+  z-index: 13;
+}
+.shopcards-list .hover .overlay {
+  display: block;
+}
+.shopcards-list .hover-left .overlay {
+  left: -252px;
+  -moz-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -webkit-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -o-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  -ms-box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+  box-shadow: 0 10px 17px 0px rgba(110, 110, 110, 0.2);
+}
+.shopcards-list .hover-left .o-arrow {
+  position: absolute;
+  left: 250px;
+  background: url("/static/images/overlay_arrow_right.png?__sprite") no-repeat;
+}
+.shopcards-list .star-show {
+  overflow: hidden;
+  zoom: 1;
+}
+.shopcards-list .star-show li {
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin-left: 3px;
+  background: url("/static/images/star_icon.png?__sprite") no-repeat;
+}
+.shopcards-list .star-show li.on {
+  background-position: 0px -12px;
+}
+.shopcards-list .esc-collection {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 10px;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  width: 60px;
+  background: #ff2d4b;
+  font-size: 15px;
+  color: #fff;
+  z-index: 13;
+}
+.shopcards-list .v-hide {
+  visibility: hidden;
+}
+.shopcards-list .cert-icon img {
+  margin: 0 0 -3px 3px;
+}
+.shopcards-list .cert-pah {
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 4px 0 0;
+}

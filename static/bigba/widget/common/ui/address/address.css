@@ -1,0 +1,451 @@
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+.addr-item {
+  float: left;
+  width: 240px;
+  height: 120px;
+  margin: 0 15px 20px 0;
+  padding: 0px 15px 15px;
+  border: 1px solid #ececec;
+  font-size: 1.2em;
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.addr-item .addr-title {
+  height: 26px;
+  line-height: 26px;
+  padding: 10px 0 7px;
+  border-bottom: 1px solid #ececec;
+  overflow: hidden;
+  zoom: 1;
+}
+.addr-item .addr-title .addr-user {
+  float: left;
+  width: 160px;
+  height: 26px;
+  overflow: hidden;
+}
+.addr-item .addr-title .addr-user .name {
+  display: inline-block;
+  max-width: 130px;
+  height: 26px;
+  overflow: hidden;
+}
+.addr-item .addr-title .addr-user .sex {
+  display: inline-block;
+  max-width: 30px;
+  height: 26px;
+  overflow: hidden;
+}
+.addr-item .addr-title .addr-action {
+  float: right;
+  display: none;
+}
+.addr-item .addr-title .addr-action a {
+  padding: 2px 3px;
+  text-decoration: none;
+  color: #ff2d4b;
+}
+.addr-item .addr-title .addr-action a:hover {
+  color: #ff2d4b;
+}
+.addr-item .addr-con {
+  padding-top: 10px;
+}
+.addr-item .select-ico {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("/static/images/icon_address_corner.png?__sprite");
+  display: inline-block;
+  margin-right: 0px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: text-bottom;
+  *display: inline;
+  zoom: 1;
+  visibility: hidden;
+}
+.addr-item:hover {
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
+  border-color: #ff2d4b;
+}
+.addr-item:hover .addr-action {
+  display: inline-block;
+}
+.addr-item.select {
+  border-color: #ff2d4b;
+}
+.addr-item.select .select-ico {
+  visibility: visible;
+}
+.addr-detail {
+  margin: 20px;
+  /*width: 420px;*/
+  font-size: 15px;
+}
+.addr-detail .addr-table {
+  width: 100%;
+}
+.addr-detail .addr-table td[valign="top"] {
+  width: 70px;
+}
+.addr-detail .addr-table .l-label {
+  display: block;
+  margin: 15px 0 0 0;
+  color: #333333;
+  font-size: 14px;
+}
+.addr-detail .form-group {
+  margin-top: 3px;
+}
+.addr-detail .form-group .input-control {
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+}
+.addr-detail .form-group .input-control input[type="text"] {
+  height: 20px;
+  line-height: 20px;
+  width: 400px;
+  padding: 10px 9px;
+  border: 1px solid #ececec;
+}
+.addr-detail .form-group .input-control input[type="text"][name="sug_address"] {
+  text-indent: 1.4em;
+}
+.addr-detail .form-group .input-control input[type="text"].caution-line {
+  border: 1px solid #ff2d4b;
+}
+.addr-detail .form-group .input-control input[type="radio"] {
+  margin-right: 5px;
+}
+.addr-detail .form-group .input-control textarea {
+  width: 400px;
+  height: 80px;
+  padding: 10px 9px;
+  outline: none;
+  border: 1px solid #ececec;
+}
+.addr-detail .form-group .input-control input:focus,
+.addr-detail .form-group .input-control textarea:focus {
+  border-color: #ccc;
+}
+.addr-detail .form-group .input-control .star {
+  padding: 0 5px;
+  color: #ff2d4b;
+}
+.addr-detail .form-group .input-control .addr-icon-input {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  width: 14px;
+  height: 17px;
+  display: inline-block;
+  background: url("/static/images/s_result_addr_icon.png?__sprite") no-repeat;
+}
+.addr-detail .form-group .error-msg {
+  height: 16px;
+  padding-left: 3px;
+  color: #ff2d4b;
+  font-size: 11px;
+}
+.addr-detail .form-group .s-selected {
+  display: none;
+  width: 419px;
+  height: 38px;
+  border: 1px solid #ececec;
+  line-height: 38px;
+  background: #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+.addr-detail .form-group .s-selected p {
+  padding-left: 32px;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+}
+.addr-detail .form-group .s-search-container2 {
+  display: none;
+  width: 419px;
+  max-height: 145px;
+  border-top: 1px solid #ddd;
+  margin-top: -16px;
+}
+.addr-detail .form-group .s-search-container2 .s-list li {
+  border-top: 0;
+  margin-bottom: 0;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .his-icon {
+  float: left;
+  width: 13px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 7px;
+  background: url("/static/images/s_history_addr_icon.png?__sprite") no-repeat;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .addr-icon {
+  float: left;
+  width: 13px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 7px;
+  background: url("/static/images/s_result_addr_icon.png?__sprite") no-repeat;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .addr-content .addr-name {
+  float: left;
+  width: 350px;
+  padding: 5px 10px 3px 10px;
+  word-break: break-all;
+  font-size: 12px;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .addr-content .addr-name b {
+  color: #ff2d4b;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .addr-content .addr-desc {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  height: 1em;
+  overflow: hidden;
+  clear: both;
+  width: 350px;
+}
+.addr-detail .form-group .s-search-container2 .s-list li .addr-content .addr-shop-num {
+  display: none;
+}
+.addr-detail .form-group .s-search-container2 .s-list li i {
+  float: left;
+  width: 13px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: url("/static/images/s_result_addr_icon.png?__sprite") no-repeat;
+}
+.addr-detail .form-group .s-search-container2 .s-list li span {
+  float: left;
+  width: 350px;
+  padding: 10px;
+  word-break: break-all;
+  font-size: 12px;
+}
+.addr-detail .form-group .s-search-container2 .s-list li span b {
+  color: #ff2d4b;
+}
+.addr-detail .form-group .s-search-container2 .search-title .search-desc {
+  padding: 10px;
+  padding-left: 32px;
+  font-size: 12px;
+  border-bottom: 1px solid #ececec;
+}
+.addr-detail .form-group .s-search-container2 .search-history-clear .clear-btn {
+  display: block;
+  padding: 10px;
+  padding-left: 32px;
+  font-size: 12px;
+  background: #f8f8f8;
+}
+.addr-detail .form-submit {
+  text-align: center;
+  margin-top: 15px;
+}
+.addr-detail .form-submit input[type="button"] {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  -moz-transition: background-color 0.2s ease-in 0s;
+  -o-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #ff2d4b;
+  cursor: pointer;
+  /*取消类按钮*/
+  /*hover样式*/
+  /*不可点击态*/
+}
+.addr-detail .form-submit input[type="button"].versa {
+  background-color: #666666;
+}
+.addr-detail .form-submit input[type="button"].versa:hover {
+  background-color: #5c5c5c;
+}
+.addr-detail .form-submit input[type="button"]:hover {
+  background-color: #e52843;
+}
+.addr-detail .form-submit input[type="button"].disable,
+.addr-detail .form-submit input[type="button"].disabled {
+  background-color: #888888;
+  cursor: default;
+}
+.addr-detail .form-submit .saveBtn {
+  margin-right: 20px;
+  background: #ff2d4b;
+}
+.addr-detail .form-submit .escBtn {
+  background: #666;
+}
+.addr-detail .v-hide {
+  visibility: hidden;
+}
+.addr-detail .s-gender {
+  float: left;
+  margin-right: 15px;
+}
+.addr-detail .s-gender i {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+  background: url("/static/images/select_icon.png?__sprite") no-repeat;
+  background-position: -20px -20px;
+}
+.addr-detail .selected i {
+  background: url("/static/images/select_icon.png?__sprite") no-repeat;
+  background-position: -20px 0px;
+}

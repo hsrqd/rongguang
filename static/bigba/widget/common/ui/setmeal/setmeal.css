@@ -1,0 +1,591 @@
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+.setMeal {
+  zoom: 1;
+  color: #333333;
+}
+.setMeal .dish-title {
+  padding: 15px 25px;
+  border-bottom: 1px solid #ececec;
+}
+.setMeal .dish-title h2 {
+  font-size: 18px;
+}
+.setMeal .dish-title .closeBtn {
+  width: 20px;
+  height: 20px;
+  background: url("/static/images/search_close_icon.png?__sprite");
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+.setMeal .content {
+  padding: 0px 25px 10px;
+}
+.setMeal .content .groups {
+  overflow: hidden;
+  padding: 18px 0;
+  position: relative;
+}
+.setMeal .content .groups .group-item {
+  position: relative;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.setMeal .content .groups .group-item .top-tip {
+  background: url("/static/images/setmeal_grps_tips.png?__sprite") 0px -25px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 34px;
+  height: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: -17px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  display: none;
+}
+.setMeal .content .groups .group-item .top-tip.ready {
+  background: url("/static/images/setmeal_grps_tips.png?__sprite") 0px 0px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .content .groups .group-item .gtitle {
+  padding: 0px 10px;
+  background: #ff2d4b;
+  color: #ffffff;
+}
+.setMeal .content .groups .group-item .gtitle-not {
+  padding: 0px 10px;
+  background: #666666;
+  color: #ffffff;
+}
+.setMeal .content .groups .group-item .gname {
+  font-size: 14px;
+  padding: 5px 5px 0;
+  background: #ececec;
+  height: 37px;
+  width: 78px;
+  text-align: center;
+  border: 1px solid #ececec;
+}
+.setMeal .content .groups .group-item:hover .gtitle-not,
+.setMeal .content .groups .group-item.select .gtitle-not {
+  background: #ff2d4b;
+  color: #ffffff;
+}
+.setMeal .content .groups .group-item:hover .gname,
+.setMeal .content .groups .group-item.select .gname {
+  background: #ffffff;
+  border: 1px solid #ff2d4b;
+}
+.setMeal .content .groups .group-divider {
+  float: left;
+  font-size: 18px;
+  width: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #999999;
+}
+.setMeal .content .groups .group-arrow {
+  display: inline-block;
+  margin-right: 2px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  vertical-align: text-bottom;
+  *display: inline;
+  zoom: 1;
+  background: url("/static/images/arrow_inner_up.png?__sprite");
+  position: absolute;
+  bottom: 0;
+  left: 37px;
+}
+.setMeal .content .dishes {
+  background: #fafafa;
+  width: 740px;
+}
+.setMeal .content .dishes .list-title {
+  padding: 15px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.setMeal .content .dishes .list-title .big-tip {
+  font-size: 18px;
+  float: left;
+}
+.setMeal .content .dishes .dishes-list {
+  overflow: hidden;
+  padding: 0 0 10px 0;
+}
+.setMeal .content .dishes .dishes-list .dish-c {
+  width: 360px;
+  float: left;
+}
+.setMeal .content .dishes .dishes-list .dish-item {
+  font-size: 14px;
+  border: 1px solid #ececec;
+  width: 340px;
+  height: 38px;
+  line-height: 38px;
+  background: #ffffff;
+  float: left;
+  margin: 10px 0 0 15px;
+  overflow: hidden;
+}
+.setMeal .content .dishes .dishes-list .dish-item.mutiple {
+  cursor: pointer;
+  height: auto;
+}
+.setMeal .content .dishes .dishes-list .dish-item.mutiple.selected .mutiple-content {
+  display: block;
+}
+.setMeal .content .dishes .dishes-list .right-side {
+  float: right;
+  position: relative;
+}
+.setMeal .content .dishes .dishes-list .dish-name,
+.setMeal .content .dishes .dishes-list .select-box {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.setMeal .content .dishes .dishes-list .dish-name {
+  margin: 0 0 0 15px;
+  width: 170px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.setMeal .content .dishes .dishes-list .select-box {
+  float: left;
+  margin: 4px 0 0;
+}
+.setMeal .content .dishes .dishes-list .mutiple-box {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .content .dishes .dishes-list .dish-cost {
+  float: left;
+  margin: 0 22px 0 10px;
+  width: 54px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #ff2d4b;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .content .dishes .dishes-list .select_count {
+  display: inline-block;
+  width: 18px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  /*overflow:hidden;*/
+  /*safri bug*/
+  vertical-align: top;
+  line-height: 30px;
+  font-size: 12px;
+  color: #ff2d4b;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .content .dishes .dishes-list .addicon {
+  cursor: pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  background: url("/static/images/icon_add_active.png?__sprite") no-repeat;
+}
+.setMeal .content .dishes .dishes-list .addicon.disable {
+  background-image: url("/static/images/icon_add.png?__sprite");
+  cursor: default;
+}
+.setMeal .content .dishes .dishes-list .minusicon {
+  cursor: pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  background: url("/static/images/icon_min_active.png?__sprite") no-repeat;
+}
+.setMeal .content .dishes .dishes-list .minusicon.disable {
+  background-image: url("/static/images/icon_min.png?__sprite");
+}
+.setMeal .content .dishes .dishes-list .select-icon {
+  position: absolute;
+  right: 2px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  background: url("/static/bigba/widget/common/ui/setmeal/images/arrow_sll.png?__sprite") no-repeat;
+  top: 16px;
+  -webkit-transition: background-image 0.2s ease-in 0s;
+  -moz-transition: background-image 0.2s ease-in 0s;
+  -o-transition: background-image 0.2s ease-in 0s;
+  transition: background-image 0.2s ease-in 0s;
+}
+.setMeal .content .dishes .dishes-list .selected .select-icon {
+  background: url("/static/bigba/widget/common/ui/setmeal/images/arrow_up_sll.png?__sprite") no-repeat;
+}
+.setMeal .content .dishes .dishes-list.enough .addicon {
+  cursor: default;
+  background: url("/static/images/icon_add.png?__sprite") no-repeat;
+}
+.setMeal .content .dishes .mutiple-title {
+  height: 38px;
+  overflow: hidden;
+}
+.setMeal .content .dishes .mutiple-content {
+  display: none;
+  border-top: 2px solid #ececec;
+  padding: 15px 15px 0;
+}
+.setMeal .content .dishes .mutiple-content .select-box {
+  margin: 4px 0 0;
+  float: right;
+}
+.setMeal .content .dishes .size-table {
+  font-size: 12px;
+  color: #999999;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 120%;
+  width: 100%;
+}
+.setMeal .content .dishes .size-table .attr-title {
+  line-height: 22px;
+  width: 61px;
+}
+.setMeal .content .dishes .size-table td {
+  padding: 4px 4px 4px 0;
+}
+.setMeal .content .dishes .size-table .s-item {
+  padding: 3px 9px;
+  margin: 0 6px 2px 0;
+  cursor: pointer;
+  color: #333333;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #fafafa;
+  border: 1px solid #dddddd;
+}
+.setMeal .content .dishes .size-table .s-item.sec,
+.setMeal .content .dishes .size-table .s-item:hover {
+  background: #ff2d4b;
+  color: #ffffff;
+  border: 1px solid #ff2d4b;
+}
+.setMeal .content .dishes .size-table .select_count {
+  line-height: 18px;
+}
+.setMeal .content .dishes .m-sel-icon {
+  position: static;
+  float: left;
+  margin: 0px;
+  -webkit-user-select: none;
+}
+.setMeal .content .dishes .m-sel-icon .divider,
+.setMeal .content .dishes .m-sel-icon .stockcon {
+  height: 20px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  overflow: hidden;
+  color: #999999;
+  line-height: 14px;
+  margin: 0 4px;
+}
+.setMeal .content .dishes .m-sel-icon .divider {
+  margin: 0px;
+}
+.setMeal .bottom {
+  background: #ececec;
+  padding: 16px;
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .bottom .price {
+  font-size: 16px;
+  color: #ff2d4b;
+  font-weight: normal;
+  text-decoration: none;
+}
+.setMeal .bottom .select-outer {
+  width: 90px;
+  padding: 0 10px 0 0;
+  float: right;
+}
+.setMeal .bottom .select-outer.disable .select-con {
+  width: 27px;
+}
+.setMeal .bottom .select-outer.disable .addtocart {
+  background: url("/static/images/icon_add_big_disable.png?__sprite") no-repeat;
+}
+.setMeal .bottom .select-con {
+  width: 90px;
+  -webkit-transition: width 0.2s ease-in 0s;
+  -moz-transition: width 0.2s ease-in 0s;
+  -o-transition: width 0.2s ease-in 0s;
+  transition: width 0.2s ease-in 0s;
+  overflow: hidden;
+  float: right;
+}
+.setMeal .bottom .select-inner {
+  width: 90px;
+  float: right;
+}
+.setMeal .bottom strong {
+  display: inline-block;
+}
+.setMeal .bottom .select_count {
+  display: inline-block;
+  width: 30px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  color: #ff2d4b;
+  font-weight: normal;
+  text-decoration: none;
+  overflow: hidden;
+  /*safri bug*/
+  vertical-align: top;
+  line-height: 26px;
+  -webkit-user-select: none;
+}
+.setMeal .bottom .addtocart {
+  cursor: pointer;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  background: url("/static/images/icon_add_big.png?__sprite") no-repeat;
+}
+.setMeal .bottom .minusfrcart {
+  cursor: pointer;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  background: url("/static/images/icon_min_big.png?__sprite") no-repeat;
+}
+.setMeal .bottom .select-con.disable .addtocart {
+  background-url: url("/static/images/icon_add_big_disable.png?__sprite");
+}
+.setMeal .bottom .submit-btn {
+  display: inline-block;
+  width: auto;
+  height: 16px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  -moz-transition: background-color 0.2s ease-in 0s;
+  -o-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1em;
+  background-color: #ff2d4b;
+  cursor: pointer;
+  /*取消类按钮*/
+  /*hover样式*/
+  /*不可点击态*/
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 6px 40px 13px;
+  margin: 0 auto;
+}
+.setMeal .bottom .submit-btn.versa {
+  background-color: #666666;
+}
+.setMeal .bottom .submit-btn.versa:hover {
+  background-color: #5c5c5c;
+}
+.setMeal .bottom .submit-btn:hover {
+  background-color: #e52843;
+}
+.setMeal .bottom .submit-btn.disable,
+.setMeal .bottom .submit-btn.disabled {
+  background-color: #888888;
+  cursor: default;
+}
+.setMeal .v-hide {
+  visibility: hidden;
+}

@@ -1,0 +1,287 @@
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+.contact-list {
+  /*padding: 0 100px;*/
+  display: table;
+  width: 100%;
+}
+.contact-list .list-line {
+  /*margin: 40px auto 0;
+        border-bottom: 1px solid @x-gray-smoke;*/
+  display: table-cell;
+  width: 50%;
+}
+.contact-list .list-line.consumer {
+  padding-right: 10px;
+}
+.contact-list .list-line.consumer .title {
+  background: #ff2d4b;
+}
+.contact-list .list-line.business {
+  padding-left: 10px;
+}
+.contact-list .list-line.business .title {
+  background: #0071ff;
+}
+.contact-list .list-line .title {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 50px;
+}
+.contact-list .list-line .title img {
+  vertical-align: middle;
+  margin: -3px 12px 0 12px;
+}
+.contact-list .list-line .entrance {
+  background: #fafafa;
+}
+.contact-list .list-line .entrance li {
+  position: relative;
+  padding: 37px 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.contact-list .list-line .entrance li h3 {
+  font-size: 18px;
+  color: #333;
+}
+.contact-list .list-line .entrance li p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+.contact-list .list-line .entrance li a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+.contact-list .list-line .entrance li a.con {
+  background: #ff2d4b;
+}
+.contact-list .list-line .entrance li a.con:hover {
+  background: #dc1432;
+}
+.contact-list .list-line .entrance li a.bus {
+  background: #0071ff;
+}
+.contact-list .list-line .entrance li a.bus:hover {
+  background: #0053bb;
+}
+.contact-list .list-line .list-container {
+  padding: 45px 0 0 50px;
+  overflow: hidden;
+  zoom: 1;
+  background: #fafafa;
+  height: 420px;
+}
+.contact-list .list-line .list-container .contact {
+  margin-bottom: 25px;
+}
+.contact-list .list-line .list-container .contact h3 {
+  color: #333;
+  font-size: 18px;
+}
+.contact-list .list-line .list-container .list-item {
+  /*float: left;
+                width: 25%;
+                text-align: center;*/
+  margin-bottom: 20px;
+}
+.contact-list .list-line .list-container .list-item:hover .con {
+  color: #ff2d4b;
+}
+.contact-list .list-line .list-container .list-item:hover .bus {
+  color: #0071ff;
+}
+.contact-list .list-line .list-container .list-item a {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+}
+.contact-list .list-line .list-container .list-item span {
+  display: block;
+  height: 50px;
+}
+.contact-list .list-line .list-container .list-item .item-img {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.contact-list .list-line .list-container .list-item .item-text {
+  display: inline-block;
+  margin-left: 15px;
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact-list .list-line .list-container .list-item.qq a:hover {
+  cursor: text;
+}
+.contact-list .list-line .list-container .list-item.qq p:hover {
+  cursor: text;
+}
+.contact-list .list-line .list-container .tieba .item-img {
+  background: url("/static/images/yh_tieba.png") no-repeat;
+}
+.contact-list .list-line .list-container .weibo .item-img {
+  background: url("/static/images/yh_weibo.png") no-repeat;
+}
+.contact-list .list-line .list-container .wechat .item-img {
+  background: url("/static/images/yh_wechat.png") no-repeat;
+}
+.contact-list .list-line .list-container .qq .item-img {
+  background: url("/static/images/yh_qq.png") no-repeat;
+}
+.contact-list .list-line .list-container .email .item-img {
+  background: url("/static/images/yh_email.png") no-repeat;
+}
+.contact-list .list-line .list-container .biz .item-img {
+  background: url("/static/images/sh_email.png") no-repeat;
+}
+.wm-wechat {
+  padding: 25px 0px;
+}
+.wm-wechat h3 {
+  color: #ff2d4b;
+  font-size: 24px;
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+/*
+* @description: 帮助类
+* @author: gongwei
+* @update: 
+*/
+
+/* @group 背景 */
+.bgcw{ background-color: #FFF;}
+.bgcg1{ background-color: #fbfbfb;}
+.bgcg2{ background-color: #f9f9f9;}
+.bgcg3{ background-color: #cdcdcd;}
+/* @end 背景 */
+
+/* @group 文字 */
+.fcr {color: #ff0000;}
+.fcg {color: #999;}
+.fcw {color: #fff;}
+.fcb {color: #7e84d2;}
+.f12 {font-size: 12px;}
+.f14 {font-size: 14px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f36 {font-size: 36px;}
+.fwb {font-weight: bold;}
+.fsn{font-style: normal;}
+/* @end 文字 */
+
+/* @group 排版 */
+
+/* padding预定义间隔 */
+.pas {padding: 5px}
+.pam {padding: 10px}
+.pts {padding-top: 5px}
+.ptm {padding-top: 10px}
+.prs {padding-right: 5px}
+.prm {padding-right: 10px}
+.pbs {padding-bottom: 5px}
+.pbm {padding-bottom: 10px}
+.pls {padding-left: 5px}
+.plm {padding-left: 10px}
+.phs {padding-left: 5px; padding-right: 5px}
+.phm {padding-left: 10px; padding-right: 10px}
+.pvs {padding-top: 5px; padding-bottom: 5px}
+.pvm {padding-top: 10px; padding-bottom: 10px}
+
+/* margin预定义间隔 */
+.mas {margin: 5px}
+.mam {margin: 10px}
+.mts {margin-top: 5px}
+.mtm {margin-top: 10px}
+.mrs {margin-right: 5px}
+.mrm {margin-right: 10px}
+.mbs {margin-bottom: 5px}
+.mbm {margin-bottom: 10px}
+.mls {margin-left: 5px}
+.mlm {margin-left: 10px}
+.mhs {margin-left: 5px;margin-right: 5px}
+.mhm {margin-left: 10px;margin-right: 10px}
+.mvs {margin-top: 5px;margin-bottom: 5px}
+.mvm {margin-top: 10px;margin-bottom: 10px}
+/* @end 排版 */
+
+/* @group 布局 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/* 清除浮动 */
+.clearfix  {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after  {
+  display: table;
+  content: "";
+}
+.clearfix:after  {
+  clear: both;
+}
+/* @end 布局 */
+
+/* @group 其它 */
+
+/* 媒体块信息 */
+.media {
+	float: left;
+	margin-right: 5px;
+}
+
+/* 隐藏 */
+.hide {
+	display: none;
+}
+/* @end 其它 */

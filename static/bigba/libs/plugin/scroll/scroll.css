@@ -1,0 +1,72 @@
+.jscroll {
+  height: 115px;
+  margin: 23px 0px 15px 0px;
+}
+.jscroll .prev,
+.jscroll .next,
+.jscroll .prev_disable,
+.jscroll .next_disable {
+  overflow: hidden;
+  display: block;
+  float: left;
+  background: none repeat scroll 0 0 #DADADA;
+  height: 90px;
+  width: 20px;
+}
+.jscroll .prev span,
+.jscroll .next span,
+.jscroll .prev_disable span,
+.jscroll .next_disable span {
+  display: block;
+  height: 18px;
+  margin: 40px auto;
+  width: 12px;
+  background: url("/static/bigba/libs/plugin/scroll/arrow_cater.gif") no-repeat scroll 0 0 transparent;
+}
+.jscroll .prev,
+.jscroll .next {
+  cursor: pointer;
+}
+.jscroll .prev:hover,
+.jscroll .next:hover {
+  background: none repeat scroll 0 0 #BCBCBC;
+}
+.jscroll .prev_disable,
+.jscroll .next_disable {
+  cursor: default;
+}
+.jscroll .prev span {
+  background-position: 0 0;
+}
+.jscroll .next span {
+  background-position: 0 -26px;
+}
+.jscroll .prev_disable span {
+  background-position: 0 -56px;
+}
+.jscroll .next_disable span {
+  background-position: 0 -82px;
+}
+.jscroll .body {
+  float: left;
+  text-align: left;
+  overflow: hidden;
+  width: 628px;
+  margin: 0 8px;
+  position: relative;
+}
+.jscroll .body .items {
+  position: relative;
+  height: 115px;
+  left: 0px;
+  overflow: hidden;
+}
+.jscroll .body .items .item {
+  float: left;
+  _display: inline;
+  overflow: hidden;
+  height: 115px;
+  width: 119px;
+  padding: 0px;
+  margin: 0 3px;
+}

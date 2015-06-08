@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="http://api.map.baidu.com/getscript?v=2.0&ak=E3b5d5163148e5f3cef2326ea0226fe4"></script>
+    <style>
+        .test{
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            -moz-transition: all 0.5s ease-in;
+            -webkit-transition: all 0.5s ease-in;
+            -o-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+        }
+        .test:hover{
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+<style>
+    ul, li
+    {
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    #select
+    {
+        position:relative;
+        width:96px;
+        height:28px;
+        line-height:28px;
+        color:#7da1bb;
+        padding-left:14px;
+        background:url(http://www.w3cfuns.com/data/attachment/album/201203/26/1133367lvvy4n1418z6o8r.jpg) no-repeat;
+    }
+    .option
+    {
+        display:none;
+        width:108px;
+        height:auto;
+        border:1px solid #ACBABD;
+        position:absolute;
+        top:20px;
+        background-color: #fff;
+    }
+    .option li
+    {
+        color:#7da1bb;
+        border-bottom:1px solid #ACBABD;
+        line-height:28px;
+        padding:0 14px;
+
+    }
+    .option li.hover
+    {
+        background:#316AC5;
+        color:#FFF;
+    }
+    .select_box
+    {
+        width:112px;
+        height:auto;
+        position: relative;
+    }
+</style>
+
+<div class="select_box" style="margin-left: 300px;">
+    <div id="select">选择城市</div>
+    <ul class="option">
+        <li>北京</li>
+        <li>上海</li>
+        <li> 深圳</li>
+    </ul>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        $("#select").click(function () {
+            $(".option").toggle();
+        });
+        $(".option li").click(function () {
+            $("#select").text($(this).text());
+            $(".option").hide();
+        });
+        $(".option li").mouseover(function () {
+            $(".option li").removeClass("hover");
+            $(this).addClass("hover");
+        });
+        $(".select_box").mouseout(function () {
+           // $(".option").hide();
+        });
+        $(".option").mouseover(function () {
+            $(".option").show();
+        });
+    });
+
+</script>
+
+
+<div class="test"></div>
+<select id="cityCode">
+    <option value="131">北京</option>
+    <option value="332">天津</option>
+</select>
+<textarea id="txt_area" style="height: 80px; width: 600px;"></textarea>
+<input type="button" id="btn_getData" value="获取商圈数据"/>
+<br />
+商圈坐标：<br />
+<textarea id="txt_area_data" style="height: 80px; width: 600px;"></textarea>
+<br />
+<div style="width: 900px;height: 900px;" id="mapPanle"></div>
+<script>
+    $("#txt_area").val("请输入要查询的商圈列表用英文逗号分隔，如：\r\n回龙观,西三旗,上地,清河,五道口,中关村,万柳,航天桥,月坛,魏公村,西直门,北太平庄,安贞桥,和平里,亚运村,北苑,天通苑,望京,酒仙桥,三元桥,东直门,团结湖,工体,劲松 ");
+    $("#btn_getData").click(function () {
+        reset();
+    });
+
+    var map,city,cityName,url_areaCode,url_areaData,areaData,
+    citys={
+        "131":"北京",
+        "332":"天津"
+    };
+
+    function reset(){
+        city=$("#cityCode").val();
+        cityName=citys[city];
+        $("#txt_area_data").val("");
+        areaData={};
+        initMap(cityName);
+        url_areaCode='http://map.baidu.com/?qt=s&c='+city+'&wd=';
+        if(city=="131")
+            url_areaData='http://map.baidu.com/?qt=ext&c='+city+'&ext_ver=new&nn=0&l=14&uid=';
+        else
+            url_areaData="http://map.baidu.com/?qt=ext&l=14&uid=";
+        getAreaData();
+    }
+
+    function getAreaData(){
+        var areas = $.trim($("#txt_area").val()).split(",");
+        for (var i = 0, len = areas.length; i < len; i++) {
+            (function(index){
+                var area=areas[i];
+                getJson(url_areaCode + encodeURIComponent(area),function(codeData){
+                    var code;
+
+                    if(codeData && codeData.result && codeData.result.profile_uid)
+                        code=codeData.result.profile_uid;
+                    if(!$.isArray(codeData.content))
+                        code=codeData.content.uid;
+                    if(!code){
+                        recordAreaData(area,"null");
+                        return;
+                    }
+                   // console.info(url_areaData+code);
+                    getJson(url_areaData+code,function(areaCode){
+                      //  console.info(areaCode);
+                        if(!(areaCode && areaCode.content && areaCode.content.geo)){
+                            recordAreaData(area,"null");
+                            return;
+                        }
+                        //recordAreaData(area,areaCode.content.geo);
+                        var points=[],bounds,data=[];
+                        var areas = areaCode.content.geo.split("|");
+                        areas = areas[areas.length - 1].split("-");
+                        areas = areas[areas.length - 1].split(";");
+                        areas = areas[0].split(",");
+                        var bounds=new BMap.Bounds();
+                        var point,projection=map.getMapType().getProjection();
+                        for (var i = 0, areaCount = areas.length; i < areaCount; i = i + 2) {
+
+                            point=projection.pointToLngLat(new BMap.Pixel(areas[i], areas[i + 1]));
+                            points.push(point);
+                            bounds.extend(point);
+                            data.push(point.lng+","+point.lat);
+                        }
+                       // var polygon = new BMap.Polygon(points, {strokeColor: "#adc5e9",fillColor:"#adc5e9", strokeWeight: 3, strokeOpacity: 0.7});
+                        var polygon = new BMap.Polygon(points, {strokeColor: "#7097E5", fillColor: "#adc5e9", strokeWeight: 1, strokeOpacity: 1, fillOpacity: 0.5, enableClicking: false});
+                        map.addOverlay(polygon);
+                        var secRingLabel2 = new BMap.Label(area,{offset: new BMap.Size(10,-20), position: bounds.getCenter()});
+                        secRingLabel2.setStyle({"padding": "2px"});
+                        map.addOverlay(secRingLabel2);
+                        recordAreaData(area,data.join(","));
+                    });
+                });
+            })(i);
+        }
+    }
+
+    function echo(x,y){
+        //console.info(x+"\t"+y);
+    }
+
+    function initMap(cityName){
+        map = new BMap.Map("mapPanle");            // 创建Map实例
+        var point = new BMap.Point(116.404, 39.915);    // 创建点坐标
+                          // 初始化地图,设置中心点坐标和地图级别。
+        map.centerAndZoom(cityName,11);
+        map.enableScrollWheelZoom();
+        map.addControl(new BMap.NavigationControl());  //右上角，仅包含平移和缩放按钮
+        map.addEventListener("click", function(e){
+            alert(e.point.lng + ", " + e.point.lat);
+        });
+    }
+
+    function recordAreaData(area,data){
+        areaData[area]=data;
+        $("#txt_area_data").val(JSON.stringify(areaData));
+    }
+
+    function getJson(url,cb){
+        $.ajax({ url : url , dataType : "jsonp", success : cb });
+    }
+
+</script>
+</body>
+</html>
