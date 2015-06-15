@@ -1,0 +1,1 @@
+define("bigba:widget/selectcar/submit/submit.js",function(i,t,e){e.exports={init:function(){}}});
