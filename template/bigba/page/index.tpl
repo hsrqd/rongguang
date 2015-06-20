@@ -15,6 +15,9 @@
 {%widget name="bigba:widget/index/fengcai/fengcai.tpl"%}
 {%widget name="bigba:widget/index/hezuo/hezuo.tpl"%}
 </div>
+{%script%}
+        require("bigba:page/index.js");
+    {%/script%}
 {%/block%}
 {%block name="bottomArea"%}
 {%widget name="bigba:widget/index/bottom/bottom.tpl"%}
