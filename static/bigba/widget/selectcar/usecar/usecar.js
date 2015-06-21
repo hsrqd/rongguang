@@ -1,4 +1,5 @@
 define('bigba:widget/selectcar/usecar/usecar.js', function(require, exports, module){ var cal = require("bigba:static/libs/plugin/calendar/calendar.js");
+var fixEle = require("jsmod/ui/fixElement");
 var def_cal_option ={
     onSelectDay:function(date,week){
         console.log(date);
@@ -45,6 +46,7 @@ module.exports = Widget.extend({
         initcarnumber(carNumberList);
         this.initcalendar();
         this.initbacktips();
+        //this.showErrorTip($("[name=to_place]"));
     },
     initcalendar: function(){
         var me = this;
@@ -73,6 +75,15 @@ module.exports = Widget.extend({
             });
             _input.val(selectArr.join("-"));
         });
+    },
+    showErrorTip:function(ele){
+        var errorEle = this.$el.find("[data-node=errorcon]");
+        var fix = new fixEle(errorEle, {
+            target: ele,
+            offset: {left: 0, top: 0},
+            targetType:"bottom,left,right"
+        });
+        //setTimeout(function(){fix.hide();fix.destory()},2000);
     },
     nextBtnClick: function(){
 

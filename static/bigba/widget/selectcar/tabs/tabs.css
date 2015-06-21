@@ -185,8 +185,8 @@
 }
 .widget-selectcar-tabs .content-box .car-box .detail {
   float: left;
-  padding: 40px 40px 0 40px;
-  width: 240px;
+  padding: 40px 0px 0 40px;
+  width: 280px;
   cursor: pointer;
 }
 .widget-selectcar-tabs .content-box .car-box .corner {
@@ -213,6 +213,10 @@
 }
 .widget-selectcar-tabs .content-box .tit {
   font-size: 28px;
+  float: left;
+}
+.widget-selectcar-tabs .content-box .tb-con {
+  float: right;
 }
 .widget-selectcar-tabs .content-box .price {
   font-size: 24px;

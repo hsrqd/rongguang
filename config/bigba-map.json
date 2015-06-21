@@ -912,6 +912,7 @@
             "type": "js",
             "deps": [
                 "bigba:static/libs/plugin/calendar/calendar.js",
+                "jsmod/ui/fixElement",
                 "bigba:widget/selectcar/usecar/usecar.less"
             ]
         },

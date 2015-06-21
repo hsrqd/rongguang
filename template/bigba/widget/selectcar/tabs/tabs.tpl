@@ -67,6 +67,12 @@
                 </div>
     			<div class="detail"  data-id="{%$item.car_id%}" data-name="{%$item.car_title%}">
     				<h1 class="tit">{%$item.car_title%}</h1>
+                    <div class="tb-con" data-node="selectNum">
+                        <span data-node="minus">-</span>
+                        <input size="2" value="0" data-node="input">
+                        <span data-node="add">+</span>
+                    </div>
+                    <div class="divider"></div>
     				<p>
     					<span class="price">￥{%$item.car_price%}起</span>
     					<span class="fr tips"><img src="/static/bigba/images/tips.png"></span>
@@ -110,7 +116,7 @@
             <button class="nextbtn" data-node="nextBtn">下一步</button>
         </div>
     </div>
-    <form data-node="nextForm" action="order/select_car_action/" style="display:none">
+    <form data-node="nextForm" method="POST" action="/order/select_car_action" style="display:none">
     </form>
 </div>
 {%script%}

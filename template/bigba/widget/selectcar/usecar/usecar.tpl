@@ -42,23 +42,20 @@
         </div>
         <div class="item-box">
             <label>出发地点</label>
-            <select>
+            <select name="from_city">
                 <option value="131">北京</option>
             </select>
-            <input placeholder="出发地点" size="40" />
+            <input  name="from_place" placeholder="出发地点" size="40" />
             <!-- <select placeholder="出发地点">
                 <option></option>
             </select> -->
         </div>
         <div class="item-box">
             <label>到达地点</label>
-            <select>
+            <select name="to_city">
                 <option value="131">北京</option>
             </select>
-            <input placeholder="到达地点" size=40 />
-            <!-- <select placeholder="到达地点">
-                <option></option>
-            </select> -->
+            <input name="to_place" placeholder="到达地点" size="40" />
         </div>
         <div class="item-box" data-node="carway">
             <label>用车方式:</label>
@@ -191,6 +188,7 @@
             <button class="nextbtn" data-node="nextBtn">下一步</button>
         </div>
     </div>
+    <div class="error-Con" data-node="errorcon" style="display:none">错误msg错误msg错误msg</div>
     </form>
 </div>
 {%script%}

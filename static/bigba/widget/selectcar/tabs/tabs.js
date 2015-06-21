@@ -62,7 +62,6 @@ module.exports = Widget.extend({
     	});
     },
     initEvent:function(){
-
         var me = this;
         me.$el.find(".car-list .detail").click(function(){
             var _par = $(this).parent("[data-node=car-box]");
@@ -111,15 +110,27 @@ module.exports = Widget.extend({
     },
     renderSelect:function(){
         this.$el.find("[data-node=selectMsg]").html(selectTpl({data:selectData}));
+        /*var _form = $("[data-node=nextForm]");
+        var _html = [];
+        _html.push('<input type="hidden" name="csrf_rongguang_name" value="'+$("#csrf_rongguang_name").val()+'">');
+        for(var i=0,len=selectData.length;i<len;i++){
+            _html.push('<input type="checkbox" name="car_id_list" value="'+selectData[i].id+'" />');
+            _html.push('<input type="checkbox" name="car_num_list" value="'+selectData[i].num+'" />');
+        }
+        _form.html(_html.join(""));*/
+    },
+    initForm : function(){
+
     },
     nextBtnClick: function(){
         var _form = $("[data-node=nextForm]");
-        if(!selectData.length){alert("请至少选择一辆车");return;}
         _form.append('<input type="hidden" name="csrf_rongguang_name" value="'+$("#csrf_rongguang_name").val()+'">');
         for(var i=0,len=selectData.length;i<len;i++){
-            _form.append('<input type="checkbox" name="car_id_list[]" value="'+selectData[i].id+'" />');
-            _form.append('<input type="checkbox" name="car_num_list['+selectData[i].id+']" value="'+selectData[i].num+'" />');
+            _form.append('<input type="checkbox" checked name="car_id_list[]" value="'+selectData[i].id+'" />');
+            _form.append('<input type="checkbox" checked name="car_num_list['+selectData[i].id+']" value="'+selectData[i].num+'" />');
         }
+        if(!selectData.length){alert("请至少选择一辆车");return;}
+        
         _form.submit();
     }
 });
