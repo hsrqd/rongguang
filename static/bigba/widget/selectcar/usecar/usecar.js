@@ -69,13 +69,13 @@ module.exports = Widget.extend({
             var _dom = $(e.currentTarget);
             _dom.toggleClass("select");
             backtips.find(".select").each(function(index,ele){
-                selectArr.push(ele.text());
+                selectArr.push($(ele).text());
             });
             _input.val(selectArr.join("-"));
         });
     },
     nextBtnClick: function(){
-        
+
     }
 });
  

@@ -2,10 +2,17 @@
 <!doctype html>
 {%html framework="bigba:static/libs/mod.js"%}
 {%head%}
-    {%block name="jslib"%}
-        {%widget name="bigba:widget/layout/jslib.tpl" %}
-
-    {%/block%}
+{%*加载依赖库*%}
+{%require name="bigba:static/libs/jquery.js"%}
+{%require name="bigba:static/libs/plugin/placeholder/jquery.placeholder.js"%}
+{%require name="bigba:static/libs/listener.js"%}
+{%require name="bigba:static/libs/jsmod.js"%}
+{%require name="bigba:static/libs/widget.js"%}
+{%require name="bigba:static/libs/underscore.js"%}
+{%require name="bigba:static/libs/listener.js"%}
+{%require name="bigba:static/css/base.css"%}
+{%require name="bigba:static/css/utility.css"%}
+{%*加载依赖库end*%}
     {%block name="meta"%}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
