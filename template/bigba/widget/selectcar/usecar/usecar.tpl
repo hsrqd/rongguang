@@ -5,18 +5,6 @@
     <div class="divider"></div>
     <div class="content-box">
         <div class="item-box">
-            <label>出发地点</label>
-            <input placeholder="出发地点" />
-            <!-- <select placeholder="出发地点">
-                <option></option>
-            </select> -->
-            <label>到达地点</label>
-            <input placeholder="到达地点" />
-            <!-- <select placeholder="到达地点">
-                <option></option>
-            </select> -->
-        </div>
-        <div class="item-box">
             <table class="item-table">
                 <tr>
                     <th>车辆</th>
@@ -38,6 +26,26 @@
                     <td><div class="tb-con"><span>-</span><input size="2"><span>+</span></div></td>
                 </tr>
             </table>
+        </div>
+        <div class="item-box">
+            <label>出发地点</label>
+            <select>
+                <option value="131">北京</option>
+            </select>
+            <input placeholder="出发地点" size="40" />
+            <!-- <select placeholder="出发地点">
+                <option></option>
+            </select> -->
+        </div>
+        <div class="item-box">
+            <label>到达地点</label>
+            <select>
+                <option value="131">北京</option>
+            </select>
+            <input placeholder="到达地点" size=40 />
+            <!-- <select placeholder="到达地点">
+                <option></option>
+            </select> -->
         </div>
         <div class="item-box">
             <label>用车方式:</label>

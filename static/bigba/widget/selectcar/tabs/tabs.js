@@ -115,11 +115,11 @@ module.exports = Widget.extend({
     nextBtnClick: function(){
         var _form = $("[data-node=nextForm]");
         if(!selectData.length){alert("请至少选择一辆车");return;}
+        _form.append('<input type="hidden" name="csrf_rongguang_name" value="'+$("#csrf_rongguang_name").val()+'">');
         for(var i=0,len=selectData.length;i<len;i++){
             _form.append('<input type="checkbox" name="car_id_list[]" value="'+selectData[i].id+'" />');
             _form.append('<input type="checkbox" name="car_num_list['+selectData[i].id+']" value="'+selectData[i].num+'" />');
         }
-        debugger;
         _form.submit();
     }
 });
