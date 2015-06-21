@@ -288,11 +288,6 @@
             "type": "js",
             "pkg": "bigba:p0"
         },
-        "bigba:static/plugin/ZeroClipboard.js": {
-            "uri": "/static/bigba/plugin/ZeroClipboard.js",
-            "type": "js",
-            "pkg": "bigba:p0"
-        },
         "bigba:static/plugin/jquery.lazyload.js": {
             "uri": "/static/bigba/plugin/jquery.lazyload.js",
             "type": "js",
@@ -989,7 +984,6 @@
                 "bigba:static/utils/Template.js",
                 "bigba:static/utils/timer.js",
                 "bigba:static/plugin/Listener.js",
-                "bigba:static/plugin/ZeroClipboard.js",
                 "bigba:static/plugin/jquery.lazyload.js",
                 "bigba:static/plugin/jquery.mousewheel.js",
                 "bigba:static/plugin/jquery.placeholder.js",

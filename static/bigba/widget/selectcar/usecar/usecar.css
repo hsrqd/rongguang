@@ -161,6 +161,9 @@
   color: #666666;
   margin: 0 6px 0 0;
 }
+.widget-selectcar-usecar .content-box .item-box .disable {
+  color: #ececec;
+}
 .widget-selectcar-usecar .content-box .item-box input,
 .widget-selectcar-usecar .content-box .item-box select {
   border: 1px solid #ececec;
@@ -191,6 +194,13 @@
   line-height: 180px;
   background-color: #f8f8f8;
   margin: 0 0px 0 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.widget-selectcar-usecar .content-box .item-box .item-table .tb-con span {
+  cursor: pointer;
 }
 .widget-selectcar-usecar .content-box .blacktips {
   line-height: 30px;
@@ -209,6 +219,7 @@
   position: relative;
   text-align: center;
 }
+.widget-selectcar-usecar .content-box .blacktip.select,
 .widget-selectcar-usecar .content-box .blacktip:hover {
   border: 1px solid #ee7113;
   color: #ee7113;
@@ -227,7 +238,7 @@
   right: 0;
   background: url("/static/bigba/images/select_corner_s.png") 0 0 no-repeat;
 }
-.widget-selectcar-usecar .content-box .blacktip.selected .corner,
+.widget-selectcar-usecar .content-box .blacktip.select .corner,
 .widget-selectcar-usecar .content-box .blacktip:hover .corner {
   background-position: 0 -20px;
 }
