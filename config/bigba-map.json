@@ -1,1 +1,1067 @@
-{"res":{"bigba:page/contact.tpl":{"uri":"/template/bigba/page/contact.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/index.js":{"uri":"/static/bigba/page/index.js","type":"js"},"bigba:page/index.tpl":{"uri":"/template/bigba/page/index.tpl","type":"tpl","extras":{"isPage":true},"deps":["bigba:page/index.js"]},"bigba:page/layout.js":{"uri":"/static/bigba/page/layout.js","type":"js","deps":["bigba:static/utils/GlobalErrorMonitor.js","jsmod/ui/dialog","bigba:page/layout.less"],"pkg":"bigba:p0"},"bigba:page/layout.less":{"uri":"/static/bigba/page/layout.css","type":"css","pkg":"bigba:p1"},"bigba:page/layout.tpl":{"uri":"/template/bigba/page/layout.tpl","type":"tpl","extras":{"isPage":true},"deps":["bigba:page/layout.js","bigba:page/layout.less"]},"bigba:page/selectcar.tpl":{"uri":"/template/bigba/page/selectcar.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/submit.tpl":{"uri":"/template/bigba/page/submit.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usecarway.tpl":{"uri":"/template/bigba/page/usecarway.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter.less":{"uri":"/static/bigba/page/usercenter.css","type":"css"},"bigba:page/usercenter.tpl":{"uri":"/template/bigba/page/usercenter.tpl","type":"tpl","extras":{"isPage":true},"deps":["bigba:page/usercenter.less"]},"bigba:page/usercenter/account/account.js":{"uri":"/static/bigba/page/usercenter/account/account.js","type":"js","deps":["bigba:widget/common/verifyphone/verifyphone.js","bigba:widget/usercenter/account/account.js"]},"bigba:page/usercenter/account/account.tpl":{"uri":"/template/bigba/page/usercenter/account/account.tpl","type":"tpl","extras":{"isPage":true},"deps":["bigba:page/usercenter/account/account.js"]},"bigba:page/usercenter/address/address.tpl":{"uri":"/template/bigba/page/usercenter/address/address.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter/collection/collection.tpl":{"uri":"/template/bigba/page/usercenter/collection/collection.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter/coupon/coupon.tpl":{"uri":"/template/bigba/page/usercenter/coupon/coupon.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter/order/order.tpl":{"uri":"/template/bigba/page/usercenter/order/order.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter/refund/refund.tpl":{"uri":"/template/bigba/page/usercenter/refund/refund.tpl","type":"tpl","extras":{"isPage":true}},"bigba:page/usercenter/usercenter.less":{"uri":"/static/bigba/page/usercenter/usercenter.css","type":"css"},"bigba:page/usercenter/usercenter.tpl":{"uri":"/template/bigba/page/usercenter/usercenter.tpl","type":"tpl","extras":{"isPage":true},"deps":["bigba:static/utils/stat.js","bigba:page/usercenter/usercenter.less"]},"bigba:static/css/base.css":{"uri":"/static/bigba/css/base.css","type":"css"},"bigba:static/css/common_color.less":{"uri":"/static/bigba/css/common_color.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/common_component.less":{"uri":"/static/bigba/css/common_component.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/common_dimension.less":{"uri":"/static/bigba/css/common_dimension.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/common_mixin.less":{"uri":"/static/bigba/css/common_mixin.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/common_style.less":{"uri":"/static/bigba/css/common_style.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/globaltips.less":{"uri":"/static/bigba/css/globaltips.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/page.less":{"uri":"/static/bigba/css/page.css","type":"css","pkg":"bigba:p1"},"bigba:static/css/utility.css":{"uri":"/static/bigba/css/utility.css","type":"css"},"bigba:static/libs/jquery.js":{"uri":"/static/bigba/libs/jquery.js","type":"js"},"bigba:static/libs/jsmod.js":{"uri":"/static/bigba/libs/jsmod.js","type":"js","deps":["jsmod/main","jsmod/ui/fixElement","jsmod/ui/fixElement/dropDown"]},"bigba:static/libs/listener.js":{"uri":"/static/bigba/libs/listener.js","type":"js"},"bigba:static/libs/mod.js":{"uri":"/static/bigba/libs/mod.js","type":"js"},"bigba:static/libs/plugin/base.js":{"uri":"/static/bigba/libs/plugin/base.js","type":"js"},"bigba:static/libs/plugin/calendar/calendar.js":{"uri":"/static/bigba/libs/plugin/calendar/calendar.js","type":"js","deps":["bigba:static/libs/plugin/calendar/calendar.less"]},"bigba:static/libs/plugin/calendar/calendar.less":{"uri":"/static/bigba/libs/plugin/calendar/calendar.css","type":"css"},"bigba:static/libs/plugin/dialog/dialog.js":{"uri":"/static/bigba/libs/plugin/dialog/dialog.js","type":"js","deps":["bigba:static/libs/plugin/base.js","bigba:static/libs/plugin/dialog/jquery.bgiframe.js"]},"bigba:static/libs/plugin/dialog/jquery.bgiframe.js":{"uri":"/static/bigba/libs/plugin/dialog/jquery.bgiframe.js","type":"js"},"bigba:static/libs/plugin/dialog/picView.js":{"uri":"/static/bigba/libs/plugin/dialog/picView.js","type":"js","deps":["bigba:static/libs/plugin/dialog/dialog.js","bigba:static/libs/plugin/scroll/scroll.js","jsmod/ui/dialog","jsmod/ui/carousel","bigba:static/utils/Template.js","bigba:static/libs/plugin/dialog/picView.less"]},"bigba:static/libs/plugin/dialog/picView.less":{"uri":"/static/bigba/libs/plugin/dialog/picView.css","type":"css"},"bigba:static/libs/plugin/placeholder/jquery.placeholder.js":{"uri":"/static/bigba/libs/plugin/placeholder/jquery.placeholder.js","type":"js"},"bigba:static/libs/plugin/scroll/scroll.js":{"uri":"/static/bigba/libs/plugin/scroll/scroll.js","type":"js","deps":["bigba:static/libs/jquery.js","bigba:static/libs/plugin/base.js","bigba:static/utils/Browser.js","bigba:static/libs/plugin/scroll/scroll.less"]},"bigba:static/libs/plugin/scroll/scroll.less":{"uri":"/static/bigba/libs/plugin/scroll/scroll.css","type":"css"},"bigba:static/libs/underscore.js":{"uri":"/static/bigba/libs/underscore.js","type":"js"},"bigba:static/plugin/Listener.js":{"uri":"/static/bigba/plugin/Listener.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/ZeroClipboard.js":{"uri":"/static/bigba/plugin/ZeroClipboard.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/jquery.lazyload.js":{"uri":"/static/bigba/plugin/jquery.lazyload.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/jquery.mousewheel.js":{"uri":"/static/bigba/plugin/jquery.mousewheel.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/jquery.placeholder.js":{"uri":"/static/bigba/plugin/jquery.placeholder.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/json-2.3.js":{"uri":"/static/bigba/plugin/json-2.3.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/jssor/jssor.js":{"uri":"/static/bigba/plugin/jssor/jssor.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/jssor/jssor.slider.js":{"uri":"/static/bigba/plugin/jssor/jssor.slider.js","type":"js","pkg":"bigba:p0"},"bigba:static/plugin/template.js":{"uri":"/static/bigba/plugin/template.js","type":"js","pkg":"bigba:p0"},"bigba:static/util.js":{"uri":"/static/bigba/util.js","type":"js"},"bigba:static/utils/AddressDataCenter.js":{"uri":"/static/bigba/utils/AddressDataCenter.js","type":"js","deps":["bigba:static/plugin/json-2.3.js","bigba:static/utils/Cookie.js","bigba:static/util.js"],"pkg":"bigba:p0"},"bigba:static/utils/Browser.js":{"uri":"/static/bigba/utils/Browser.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/CartDataCenter.js":{"uri":"/static/bigba/utils/CartDataCenter.js","type":"js","deps":["bigba:static/utils/Cookie.js","bigba:static/util.js","bigba:widget/common/ui/cartAlert/cartAlert.js","bigba:static/utils/store.js"],"pkg":"bigba:p0"},"bigba:static/utils/Cookie.js":{"uri":"/static/bigba/utils/Cookie.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/CookieDataCenter.js":{"uri":"/static/bigba/utils/CookieDataCenter.js","type":"js","deps":["bigba:static/plugin/json-2.3.js","bigba:static/utils/Cookie.js","bigba:static/util.js"],"pkg":"bigba:p0"},"bigba:static/utils/GlobalErrorMonitor.js":{"uri":"/static/bigba/utils/GlobalErrorMonitor.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/GlobalTips.js":{"uri":"/static/bigba/utils/GlobalTips.js","type":"js","deps":["jsmod/ui/fixElement"],"pkg":"bigba:p0"},"bigba:static/utils/LocalDataCenter.js":{"uri":"/static/bigba/utils/LocalDataCenter.js","type":"js","deps":["bigba:static/utils/store.js","bigba:static/util.js"],"pkg":"bigba:p0"},"bigba:static/utils/SlidePlayer.js":{"uri":"/static/bigba/utils/SlidePlayer.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/Template.js":{"uri":"/static/bigba/utils/Template.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/readme.txt":{"uri":"/static/bigba/utils/readme.txt","type":"txt"},"bigba:static/utils/store.js":{"uri":"/static/bigba/utils/store.js","type":"js","pkg":"bigba:p0"},"bigba:static/utils/timer.js":{"uri":"/static/bigba/utils/timer.js","type":"js","pkg":"bigba:p0"},"bigba:widget/common/footer/footer.less":{"uri":"/static/bigba/widget/common/footer/footer.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/footer/footer.tpl":{"uri":"bigba/widget/common/footer/footer.tpl","type":"tpl","deps":["bigba:widget/common/footer/footer.less"]},"bigba:widget/common/fuckie/html5shiv.tpl":{"uri":"bigba/widget/common/fuckie/html5shiv.tpl","type":"tpl"},"bigba:widget/common/fuckie/iehack.tpl":{"uri":"bigba/widget/common/fuckie/iehack.tpl","type":"tpl"},"bigba:widget/common/nav/nav.js":{"uri":"/static/bigba/widget/common/nav/nav.js","type":"js","extras":{"async":["bigba:widget/common/userinfo/UserMgr.js"]},"deps":["bigba:static/util.js","bigba:static/utils/CookieDataCenter.js","bigba:widget/common/ui/citybar/citybar.js","bigba:widget/common/ui/search/search.js","bigba:widget/common/nav/nav.less"],"pkg":"bigba:p0"},"bigba:widget/common/nav/nav.less":{"uri":"/static/bigba/widget/common/nav/nav.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/nav/nav.tpl":{"uri":"bigba/widget/common/nav/nav.tpl","type":"tpl","deps":["bigba:widget/common/nav/nav.js","bigba:widget/common/nav/nav.less"]},"bigba:widget/common/ui/address/address.js":{"uri":"/static/bigba/widget/common/ui/address/address.js","type":"js","deps":["jsmod/ui/dialog","bigba:static/utils/GlobalTips.js","bigba:static/utils/CookieDataCenter.js","bigba:widget/common/ui/search/search.js","bigba:widget/common/ui/address/address.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/address/address.less":{"uri":"/static/bigba/widget/common/ui/address/address.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/cartAlert/cartAlert.js":{"uri":"/static/bigba/widget/common/ui/cartAlert/cartAlert.js","type":"js","deps":["jsmod/ui/dialog","bigba:widget/common/ui/cartAlert/cartAlert.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/cartAlert/cartAlert.less":{"uri":"/static/bigba/widget/common/ui/cartAlert/cartAlert.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/citybar/citybar.js":{"uri":"/static/bigba/widget/common/ui/citybar/citybar.js","type":"js","deps":["bigba:static/utils/CookieDataCenter.js","bigba:widget/common/ui/citybar/citybar.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/citybar/citybar.less":{"uri":"/static/bigba/widget/common/ui/citybar/citybar.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/feedback/feedback.js":{"uri":"/static/bigba/widget/common/ui/feedback/feedback.js","type":"js","deps":["bigba:static/utils/GlobalTips.js"],"pkg":"bigba:p0"},"bigba:widget/common/ui/multiSetmeal/setmeal.js":{"uri":"/static/bigba/widget/common/ui/multiSetmeal/setmeal.js","type":"js","deps":["bigba:static/utils/Cookie.js","bigba:static/utils/store.js","bigba:static/utils/GlobalTips.js","bigba:widget/common/ui/multiSetmeal/setmeal.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/multiSetmeal/setmeal.less":{"uri":"/static/bigba/widget/common/ui/multiSetmeal/setmeal.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/muticities/muti.js":{"uri":"/static/bigba/widget/common/ui/muticities/muti.js","type":"js","deps":["bigba:static/utils/CookieDataCenter.js","bigba:widget/common/ui/muticities/muti.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/muticities/muti.less":{"uri":"/static/bigba/widget/common/ui/muticities/muti.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/noresult/noresult.js":{"uri":"/static/bigba/widget/common/ui/noresult/noresult.js","type":"js","pkg":"bigba:p0"},"bigba:widget/common/ui/popCarousel/popCarousel.js":{"uri":"/static/bigba/widget/common/ui/popCarousel/popCarousel.js","type":"js","deps":["jsmod/ui/dialog","jsmod/ui/carousel","bigba:widget/common/ui/popCarousel/popCarousel.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/popCarousel/popCarousel.less":{"uri":"/static/bigba/widget/common/ui/popCarousel/popCarousel.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/search/search.js":{"uri":"/static/bigba/widget/common/ui/search/search.js","type":"js","deps":["bigba:static/utils/CookieDataCenter.js","bigba:static/utils/AddressDataCenter.js","bigba:widget/common/ui/search/search.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/search/search.less":{"uri":"/static/bigba/widget/common/ui/search/search.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/setmeal/setmeal.js":{"uri":"/static/bigba/widget/common/ui/setmeal/setmeal.js","type":"js","deps":["bigba:static/utils/Cookie.js","bigba:static/utils/store.js","bigba:static/utils/GlobalTips.js","bigba:widget/common/ui/setmeal/setmeal.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/setmeal/setmeal.less":{"uri":"/static/bigba/widget/common/ui/setmeal/setmeal.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/shopcard/shopcard.js":{"uri":"/static/bigba/widget/common/ui/shopcard/shopcard.js","type":"js","deps":["bigba:widget/common/ui/shopcard/shopcard.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/shopcard/shopcard.less":{"uri":"/static/bigba/widget/common/ui/shopcard/shopcard.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/topbar/topbar.js":{"uri":"/static/bigba/widget/common/ui/topbar/topbar.js","type":"js","deps":["bigba:widget/common/ui/topbar/topbar.less"],"pkg":"bigba:p0"},"bigba:widget/common/ui/topbar/topbar.less":{"uri":"/static/bigba/widget/common/ui/topbar/topbar.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/ui/topbar/topbar.tpl":{"uri":"bigba/widget/common/ui/topbar/topbar.tpl","type":"tpl","deps":["bigba:widget/common/ui/topbar/topbar.js","bigba:widget/common/ui/topbar/topbar.less"]},"bigba:widget/common/userinfo/UserMgr.js":{"uri":"/static/bigba/widget/common/userinfo/UserMgr.js","type":"js","pkg":"bigba:p0"},"bigba:widget/common/userinfo/userInfo.less":{"uri":"/static/bigba/widget/common/userinfo/userInfo.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/userinfo/userInfo.tpl":{"uri":"bigba/widget/common/userinfo/userInfo.tpl","type":"tpl","extras":{"async":["bigba:widget/common/userinfo/UserMgr.js"]},"deps":["bigba:widget/common/userinfo/userInfo.less"]},"bigba:widget/common/verifyphone/verifyphone.js":{"uri":"/static/bigba/widget/common/verifyphone/verifyphone.js","type":"js","deps":["bigba:static/utils/Template.js","jsmod/ui/pagination","bigba:static/util.js","jsmod/ui/dialog","bigba:widget/common/verifyphone/verifyphone.less"],"pkg":"bigba:p0"},"bigba:widget/common/verifyphone/verifyphone.less":{"uri":"/static/bigba/widget/common/verifyphone/verifyphone.css","type":"css","pkg":"bigba:p1"},"bigba:widget/common/verifyphone/verifyphone.tpl":{"uri":"bigba/widget/common/verifyphone/verifyphone.tpl","type":"tpl","deps":["bigba:widget/common/verifyphone/verifyphone.js","bigba:widget/common/verifyphone/verifyphone.less"]},"bigba:widget/contact/banner/banner.less":{"uri":"/static/bigba/widget/contact/banner/banner.css","type":"css"},"bigba:widget/contact/banner/banner.tpl":{"uri":"bigba/widget/contact/banner/banner.tpl","type":"tpl","deps":["bigba:widget/contact/banner/banner.less"]},"bigba:widget/contact/feedback/feedback.js":{"uri":"/static/bigba/widget/contact/feedback/feedback.js","type":"js","deps":["bigba:static/utils/GlobalTips.js","bigba:widget/common/ui/feedback/feedback.js","bigba:widget/contact/feedback/feedback.less"]},"bigba:widget/contact/feedback/feedback.less":{"uri":"/static/bigba/widget/contact/feedback/feedback.css","type":"css"},"bigba:widget/contact/feedback/feedback.tpl":{"uri":"bigba/widget/contact/feedback/feedback.tpl","type":"tpl","deps":["bigba:widget/contact/feedback/feedback.js","bigba:widget/contact/feedback/feedback.less"]},"bigba:widget/contact/list/list.js":{"uri":"/static/bigba/widget/contact/list/list.js","type":"js","deps":["jsmod/ui/dialog","bigba:widget/contact/feedback/feedback.js","bigba:widget/contact/list/list.less"]},"bigba:widget/contact/list/list.less":{"uri":"/static/bigba/widget/contact/list/list.css","type":"css"},"bigba:widget/contact/list/list.tpl":{"uri":"bigba/widget/contact/list/list.tpl","type":"tpl","deps":["bigba:widget/contact/list/list.js","bigba:widget/contact/list/list.less"]},"bigba:widget/index/bottom/bottom.js":{"uri":"/static/bigba/widget/index/bottom/bottom.js","type":"js","deps":["bigba:widget/index/bottom/bottom.less"]},"bigba:widget/index/bottom/bottom.less":{"uri":"/static/bigba/widget/index/bottom/bottom.css","type":"css"},"bigba:widget/index/bottom/bottom.tpl":{"uri":"bigba/widget/index/bottom/bottom.tpl","type":"tpl","deps":["bigba:widget/index/bottom/bottom.js","bigba:widget/index/bottom/bottom.less"]},"bigba:widget/index/fengcai/fengcai.js":{"uri":"/static/bigba/widget/index/fengcai/fengcai.js","type":"js","deps":["bigba:widget/index/fengcai/fengcai.less"]},"bigba:widget/index/fengcai/fengcai.less":{"uri":"/static/bigba/widget/index/fengcai/fengcai.css","type":"css"},"bigba:widget/index/fengcai/fengcai.tpl":{"uri":"bigba/widget/index/fengcai/fengcai.tpl","type":"tpl","deps":["bigba:widget/index/fengcai/fengcai.js","bigba:widget/index/fengcai/fengcai.less"]},"bigba:widget/index/filter/filter.js":{"uri":"/static/bigba/widget/index/filter/filter.js","type":"js","deps":["bigba:widget/index/filter/filter.less"]},"bigba:widget/index/filter/filter.less":{"uri":"/static/bigba/widget/index/filter/filter.css","type":"css"},"bigba:widget/index/filter/filter.tpl":{"uri":"bigba/widget/index/filter/filter.tpl","type":"tpl","deps":["bigba:widget/index/filter/filter.js","bigba:widget/index/filter/filter.less"]},"bigba:widget/index/hezuo/hezuo.js":{"uri":"/static/bigba/widget/index/hezuo/hezuo.js","type":"js","deps":["bigba:widget/index/hezuo/hezuo.less"]},"bigba:widget/index/hezuo/hezuo.less":{"uri":"/static/bigba/widget/index/hezuo/hezuo.css","type":"css"},"bigba:widget/index/hezuo/hezuo.tpl":{"uri":"bigba/widget/index/hezuo/hezuo.tpl","type":"tpl","deps":["bigba:widget/index/hezuo/hezuo.js","bigba:widget/index/hezuo/hezuo.less"]},"bigba:widget/index/topbar/topbar.js":{"uri":"/static/bigba/widget/index/topbar/topbar.js","type":"js","deps":["bigba:widget/index/topbar/topbar.less"]},"bigba:widget/index/topbar/topbar.less":{"uri":"/static/bigba/widget/index/topbar/topbar.css","type":"css"},"bigba:widget/index/topbar/topbar.tpl":{"uri":"bigba/widget/index/topbar/topbar.tpl","type":"tpl","deps":["bigba:widget/index/topbar/topbar.js","bigba:widget/index/topbar/topbar.less"]},"bigba:widget/index/tuijian/tuijian.js":{"uri":"/static/bigba/widget/index/tuijian/tuijian.js","type":"js","deps":["bigba:widget/index/tuijian/tuijian.less"]},"bigba:widget/index/tuijian/tuijian.less":{"uri":"/static/bigba/widget/index/tuijian/tuijian.css","type":"css"},"bigba:widget/index/tuijian/tuijian.tpl":{"uri":"bigba/widget/index/tuijian/tuijian.tpl","type":"tpl","deps":["bigba:widget/index/tuijian/tuijian.js","bigba:widget/index/tuijian/tuijian.less"]},"bigba:widget/layout/jslib.tpl":{"uri":"bigba/widget/layout/jslib.tpl","type":"tpl"},"bigba:widget/selectcar/progress/progress.js":{"uri":"/static/bigba/widget/selectcar/progress/progress.js","type":"js","deps":["bigba:widget/selectcar/progress/progress.less"]},"bigba:widget/selectcar/progress/progress.less":{"uri":"/static/bigba/widget/selectcar/progress/progress.css","type":"css"},"bigba:widget/selectcar/progress/progress.tpl":{"uri":"bigba/widget/selectcar/progress/progress.tpl","type":"tpl","deps":["bigba:widget/selectcar/progress/progress.js","bigba:widget/selectcar/progress/progress.less"]},"bigba:widget/selectcar/submit/submit.js":{"uri":"/static/bigba/widget/selectcar/submit/submit.js","type":"js","deps":["bigba:widget/selectcar/submit/submit.less"]},"bigba:widget/selectcar/submit/submit.less":{"uri":"/static/bigba/widget/selectcar/submit/submit.css","type":"css"},"bigba:widget/selectcar/submit/submit.tpl":{"uri":"bigba/widget/selectcar/submit/submit.tpl","type":"tpl","deps":["bigba:widget/selectcar/submit/submit.js","bigba:widget/selectcar/submit/submit.less"]},"bigba:widget/selectcar/tabs/tabs.js":{"uri":"/static/bigba/widget/selectcar/tabs/tabs.js","type":"js","deps":["bigba:widget/selectcar/tabs/tabs.less"]},"bigba:widget/selectcar/tabs/tabs.less":{"uri":"/static/bigba/widget/selectcar/tabs/tabs.css","type":"css"},"bigba:widget/selectcar/tabs/tabs.tpl":{"uri":"bigba/widget/selectcar/tabs/tabs.tpl","type":"tpl","deps":["bigba:widget/selectcar/tabs/tabs.js","bigba:widget/selectcar/tabs/tabs.less"]},"bigba:widget/selectcar/usecar/usecar.js":{"uri":"/static/bigba/widget/selectcar/usecar/usecar.js","type":"js","deps":["bigba:static/libs/plugin/calendar/calendar.js","bigba:widget/selectcar/usecar/usecar.less"]},"bigba:widget/selectcar/usecar/usecar.less":{"uri":"/static/bigba/widget/selectcar/usecar/usecar.css","type":"css"},"bigba:widget/selectcar/usecar/usecar.tpl":{"uri":"bigba/widget/selectcar/usecar/usecar.tpl","type":"tpl","deps":["bigba:widget/selectcar/usecar/usecar.js","bigba:widget/selectcar/usecar/usecar.less"]},"bigba:widget/usercenter/menu/menu.js":{"uri":"/static/bigba/widget/usercenter/menu/menu.js","type":"js","deps":["bigba:widget/usercenter/menu/menu.less"]},"bigba:widget/usercenter/menu/menu.less":{"uri":"/static/bigba/widget/usercenter/menu/menu.css","type":"css"},"bigba:widget/usercenter/menu/menu.tpl":{"uri":"bigba/widget/usercenter/menu/menu.tpl","type":"tpl","deps":["bigba:widget/usercenter/menu/menu.js","bigba:widget/usercenter/menu/menu.less"]},"bigba:widget/usercenter/order/order.js":{"uri":"/static/bigba/widget/usercenter/order/order.js","type":"js","deps":["bigba:widget/usercenter/order/order.less"]},"bigba:widget/usercenter/order/order.less":{"uri":"/static/bigba/widget/usercenter/order/order.css","type":"css"},"bigba:widget/usercenter/order/order.tpl":{"uri":"bigba/widget/usercenter/order/order.tpl","type":"tpl","deps":["bigba:widget/usercenter/order/order.js","bigba:widget/usercenter/order/order.less"]}},"pkg":{"bigba:p0":{"uri":"/static/bigba/lib.js","type":"js","has":["bigba:static/utils/GlobalErrorMonitor.js","bigba:static/utils/Cookie.js","bigba:static/utils/AddressDataCenter.js","bigba:static/utils/Browser.js","bigba:static/utils/store.js","bigba:static/utils/CartDataCenter.js","bigba:static/utils/CookieDataCenter.js","bigba:static/utils/GlobalTips.js","bigba:static/utils/LocalDataCenter.js","bigba:static/utils/SlidePlayer.js","bigba:static/utils/Template.js","bigba:static/utils/timer.js","bigba:static/plugin/Listener.js","bigba:static/plugin/ZeroClipboard.js","bigba:static/plugin/jquery.lazyload.js","bigba:static/plugin/jquery.mousewheel.js","bigba:static/plugin/jquery.placeholder.js","bigba:static/plugin/json-2.3.js","bigba:static/plugin/jssor/jssor.js","bigba:static/plugin/jssor/jssor.slider.js","bigba:static/plugin/template.js","bigba:widget/common/ui/cartAlert/cartAlert.js","bigba:widget/common/ui/citybar/citybar.js","bigba:widget/common/ui/search/search.js","bigba:widget/common/nav/nav.js","bigba:widget/common/ui/address/address.js","bigba:widget/common/ui/feedback/feedback.js","bigba:widget/common/ui/multiSetmeal/setmeal.js","bigba:widget/common/ui/muticities/muti.js","bigba:widget/common/ui/noresult/noresult.js","bigba:widget/common/ui/popCarousel/popCarousel.js","bigba:widget/common/ui/setmeal/setmeal.js","bigba:widget/common/ui/shopcard/shopcard.js","bigba:widget/common/ui/topbar/topbar.js","bigba:widget/common/userinfo/UserMgr.js","bigba:widget/common/verifyphone/verifyphone.js","bigba:page/layout.js"],"deps":["bigba:static/util.js","jsmod/ui/fixElement","jsmod/ui/dialog","bigba:widget/common/ui/cartAlert/cartAlert.less","bigba:widget/common/ui/citybar/citybar.less","bigba:widget/common/ui/search/search.less","bigba:widget/common/nav/nav.less","bigba:widget/common/ui/address/address.less","bigba:widget/common/ui/multiSetmeal/setmeal.less","bigba:widget/common/ui/muticities/muti.less","jsmod/ui/carousel","bigba:widget/common/ui/popCarousel/popCarousel.less","bigba:widget/common/ui/setmeal/setmeal.less","bigba:widget/common/ui/shopcard/shopcard.less","bigba:widget/common/ui/topbar/topbar.less","jsmod/ui/pagination","bigba:widget/common/verifyphone/verifyphone.less","bigba:page/layout.less"]},"bigba:p1":{"uri":"/static/bigba/common.css","type":"css","has":["bigba:static/css/common_color.less","bigba:static/css/common_component.less","bigba:static/css/common_dimension.less","bigba:static/css/common_mixin.less","bigba:static/css/common_style.less","bigba:static/css/globaltips.less","bigba:static/css/page.less","bigba:page/layout.less","bigba:widget/common/footer/footer.less","bigba:widget/common/nav/nav.less","bigba:widget/common/ui/address/address.less","bigba:widget/common/ui/cartAlert/cartAlert.less","bigba:widget/common/ui/citybar/citybar.less","bigba:widget/common/ui/multiSetmeal/setmeal.less","bigba:widget/common/ui/muticities/muti.less","bigba:widget/common/ui/popCarousel/popCarousel.less","bigba:widget/common/ui/search/search.less","bigba:widget/common/ui/setmeal/setmeal.less","bigba:widget/common/ui/shopcard/shopcard.less","bigba:widget/common/ui/topbar/topbar.less","bigba:widget/common/userinfo/userInfo.less","bigba:widget/common/verifyphone/verifyphone.less"]}}}
+{
+    "res": {
+        "bigba:page/contact.tpl": {
+            "uri": "/template/bigba/page/contact.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/index.js": {
+            "uri": "/static/bigba/page/index.js",
+            "type": "js"
+        },
+        "bigba:page/index.tpl": {
+            "uri": "/template/bigba/page/index.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "bigba:page/index.js"
+            ]
+        },
+        "bigba:page/layout.js": {
+            "uri": "/static/bigba/page/layout.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/GlobalErrorMonitor.js",
+                "jsmod/ui/dialog",
+                "bigba:page/layout.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:page/layout.less": {
+            "uri": "/static/bigba/page/layout.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:page/layout.tpl": {
+            "uri": "/template/bigba/page/layout.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "bigba:page/layout.js",
+                "bigba:page/layout.less"
+            ]
+        },
+        "bigba:page/selectcar.tpl": {
+            "uri": "/template/bigba/page/selectcar.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/submit.tpl": {
+            "uri": "/template/bigba/page/submit.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usecarway.tpl": {
+            "uri": "/template/bigba/page/usecarway.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter.less": {
+            "uri": "/static/bigba/page/usercenter.css",
+            "type": "css"
+        },
+        "bigba:page/usercenter.tpl": {
+            "uri": "/template/bigba/page/usercenter.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "bigba:page/usercenter.less"
+            ]
+        },
+        "bigba:page/usercenter/account/account.js": {
+            "uri": "/static/bigba/page/usercenter/account/account.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/common/verifyphone/verifyphone.js",
+                "bigba:widget/usercenter/account/account.js"
+            ]
+        },
+        "bigba:page/usercenter/account/account.tpl": {
+            "uri": "/template/bigba/page/usercenter/account/account.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "bigba:page/usercenter/account/account.js"
+            ]
+        },
+        "bigba:page/usercenter/address/address.tpl": {
+            "uri": "/template/bigba/page/usercenter/address/address.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter/collection/collection.tpl": {
+            "uri": "/template/bigba/page/usercenter/collection/collection.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter/coupon/coupon.tpl": {
+            "uri": "/template/bigba/page/usercenter/coupon/coupon.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter/order/order.tpl": {
+            "uri": "/template/bigba/page/usercenter/order/order.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter/refund/refund.tpl": {
+            "uri": "/template/bigba/page/usercenter/refund/refund.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "bigba:page/usercenter/usercenter.less": {
+            "uri": "/static/bigba/page/usercenter/usercenter.css",
+            "type": "css"
+        },
+        "bigba:page/usercenter/usercenter.tpl": {
+            "uri": "/template/bigba/page/usercenter/usercenter.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "bigba:static/utils/stat.js",
+                "bigba:page/usercenter/usercenter.less"
+            ]
+        },
+        "bigba:static/css/base.css": {
+            "uri": "/static/bigba/css/base.css",
+            "type": "css"
+        },
+        "bigba:static/css/common_color.less": {
+            "uri": "/static/bigba/css/common_color.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/common_component.less": {
+            "uri": "/static/bigba/css/common_component.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/common_dimension.less": {
+            "uri": "/static/bigba/css/common_dimension.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/common_mixin.less": {
+            "uri": "/static/bigba/css/common_mixin.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/common_style.less": {
+            "uri": "/static/bigba/css/common_style.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/globaltips.less": {
+            "uri": "/static/bigba/css/globaltips.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/page.less": {
+            "uri": "/static/bigba/css/page.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:static/css/utility.css": {
+            "uri": "/static/bigba/css/utility.css",
+            "type": "css"
+        },
+        "bigba:static/libs/jquery.js": {
+            "uri": "/static/bigba/libs/jquery.js",
+            "type": "js"
+        },
+        "bigba:static/libs/jsmod.js": {
+            "uri": "/static/bigba/libs/jsmod.js",
+            "type": "js",
+            "deps": [
+                "jsmod/main",
+                "jsmod/ui/fixElement",
+                "jsmod/ui/fixElement/dropDown"
+            ]
+        },
+        "bigba:static/libs/listener.js": {
+            "uri": "/static/bigba/libs/listener.js",
+            "type": "js"
+        },
+        "bigba:static/libs/mod.js": {
+            "uri": "/static/bigba/libs/mod.js",
+            "type": "js"
+        },
+        "bigba:static/libs/plugin/base.js": {
+            "uri": "/static/bigba/libs/plugin/base.js",
+            "type": "js"
+        },
+        "bigba:static/libs/plugin/calendar/calendar.js": {
+            "uri": "/static/bigba/libs/plugin/calendar/calendar.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/libs/plugin/calendar/calendar.less"
+            ]
+        },
+        "bigba:static/libs/plugin/calendar/calendar.less": {
+            "uri": "/static/bigba/libs/plugin/calendar/calendar.css",
+            "type": "css"
+        },
+        "bigba:static/libs/plugin/dialog/dialog.js": {
+            "uri": "/static/bigba/libs/plugin/dialog/dialog.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/libs/plugin/base.js",
+                "bigba:static/libs/plugin/dialog/jquery.bgiframe.js"
+            ]
+        },
+        "bigba:static/libs/plugin/dialog/jquery.bgiframe.js": {
+            "uri": "/static/bigba/libs/plugin/dialog/jquery.bgiframe.js",
+            "type": "js"
+        },
+        "bigba:static/libs/plugin/dialog/picView.js": {
+            "uri": "/static/bigba/libs/plugin/dialog/picView.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/libs/plugin/dialog/dialog.js",
+                "bigba:static/libs/plugin/scroll/scroll.js",
+                "jsmod/ui/dialog",
+                "jsmod/ui/carousel",
+                "bigba:static/utils/Template.js",
+                "bigba:static/libs/plugin/dialog/picView.less"
+            ]
+        },
+        "bigba:static/libs/plugin/dialog/picView.less": {
+            "uri": "/static/bigba/libs/plugin/dialog/picView.css",
+            "type": "css"
+        },
+        "bigba:static/libs/plugin/placeholder/jquery.placeholder.js": {
+            "uri": "/static/bigba/libs/plugin/placeholder/jquery.placeholder.js",
+            "type": "js"
+        },
+        "bigba:static/libs/plugin/scroll/scroll.js": {
+            "uri": "/static/bigba/libs/plugin/scroll/scroll.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/libs/jquery.js",
+                "bigba:static/libs/plugin/base.js",
+                "bigba:static/utils/Browser.js",
+                "bigba:static/libs/plugin/scroll/scroll.less"
+            ]
+        },
+        "bigba:static/libs/plugin/scroll/scroll.less": {
+            "uri": "/static/bigba/libs/plugin/scroll/scroll.css",
+            "type": "css"
+        },
+        "bigba:static/libs/underscore.js": {
+            "uri": "/static/bigba/libs/underscore.js",
+            "type": "js"
+        },
+        "bigba:static/libs/widget.js": {
+            "uri": "/static/bigba/libs/widget.js",
+            "type": "js"
+        },
+        "bigba:static/plugin/Listener.js": {
+            "uri": "/static/bigba/plugin/Listener.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/ZeroClipboard.js": {
+            "uri": "/static/bigba/plugin/ZeroClipboard.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/jquery.lazyload.js": {
+            "uri": "/static/bigba/plugin/jquery.lazyload.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/jquery.mousewheel.js": {
+            "uri": "/static/bigba/plugin/jquery.mousewheel.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/jquery.placeholder.js": {
+            "uri": "/static/bigba/plugin/jquery.placeholder.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/json-2.3.js": {
+            "uri": "/static/bigba/plugin/json-2.3.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/jssor/jssor.js": {
+            "uri": "/static/bigba/plugin/jssor/jssor.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/jssor/jssor.slider.js": {
+            "uri": "/static/bigba/plugin/jssor/jssor.slider.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/plugin/template.js": {
+            "uri": "/static/bigba/plugin/template.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/util.js": {
+            "uri": "/static/bigba/util.js",
+            "type": "js"
+        },
+        "bigba:static/utils/AddressDataCenter.js": {
+            "uri": "/static/bigba/utils/AddressDataCenter.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/plugin/json-2.3.js",
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/util.js"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/Browser.js": {
+            "uri": "/static/bigba/utils/Browser.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/CartDataCenter.js": {
+            "uri": "/static/bigba/utils/CartDataCenter.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/util.js",
+                "bigba:widget/common/ui/cartAlert/cartAlert.js",
+                "bigba:static/utils/store.js"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/Cookie.js": {
+            "uri": "/static/bigba/utils/Cookie.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/CookieDataCenter.js": {
+            "uri": "/static/bigba/utils/CookieDataCenter.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/plugin/json-2.3.js",
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/util.js"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/GlobalErrorMonitor.js": {
+            "uri": "/static/bigba/utils/GlobalErrorMonitor.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/GlobalTips.js": {
+            "uri": "/static/bigba/utils/GlobalTips.js",
+            "type": "js",
+            "deps": [
+                "jsmod/ui/fixElement"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/LocalDataCenter.js": {
+            "uri": "/static/bigba/utils/LocalDataCenter.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/store.js",
+                "bigba:static/util.js"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/SlidePlayer.js": {
+            "uri": "/static/bigba/utils/SlidePlayer.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/Template.js": {
+            "uri": "/static/bigba/utils/Template.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/readme.txt": {
+            "uri": "/static/bigba/utils/readme.txt",
+            "type": "txt"
+        },
+        "bigba:static/utils/store.js": {
+            "uri": "/static/bigba/utils/store.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:static/utils/timer.js": {
+            "uri": "/static/bigba/utils/timer.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/footer/footer.less": {
+            "uri": "/static/bigba/widget/common/footer/footer.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/footer/footer.tpl": {
+            "uri": "bigba/widget/common/footer/footer.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/common/footer/footer.less"
+            ]
+        },
+        "bigba:widget/common/fuckie/html5shiv.tpl": {
+            "uri": "bigba/widget/common/fuckie/html5shiv.tpl",
+            "type": "tpl"
+        },
+        "bigba:widget/common/fuckie/iehack.tpl": {
+            "uri": "bigba/widget/common/fuckie/iehack.tpl",
+            "type": "tpl"
+        },
+        "bigba:widget/common/nav/nav.js": {
+            "uri": "/static/bigba/widget/common/nav/nav.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "bigba:widget/common/userinfo/UserMgr.js"
+                ]
+            },
+            "deps": [
+                "bigba:static/util.js",
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:widget/common/ui/citybar/citybar.js",
+                "bigba:widget/common/ui/search/search.js",
+                "bigba:widget/common/nav/nav.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/nav/nav.less": {
+            "uri": "/static/bigba/widget/common/nav/nav.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/nav/nav.tpl": {
+            "uri": "bigba/widget/common/nav/nav.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/common/nav/nav.js",
+                "bigba:widget/common/nav/nav.less"
+            ]
+        },
+        "bigba:widget/common/ui/address/address.js": {
+            "uri": "/static/bigba/widget/common/ui/address/address.js",
+            "type": "js",
+            "deps": [
+                "jsmod/ui/dialog",
+                "bigba:static/utils/GlobalTips.js",
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:widget/common/ui/search/search.js",
+                "bigba:widget/common/ui/address/address.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/address/address.less": {
+            "uri": "/static/bigba/widget/common/ui/address/address.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/cartAlert/cartAlert.js": {
+            "uri": "/static/bigba/widget/common/ui/cartAlert/cartAlert.js",
+            "type": "js",
+            "deps": [
+                "jsmod/ui/dialog",
+                "bigba:widget/common/ui/cartAlert/cartAlert.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/cartAlert/cartAlert.less": {
+            "uri": "/static/bigba/widget/common/ui/cartAlert/cartAlert.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/citybar/citybar.js": {
+            "uri": "/static/bigba/widget/common/ui/citybar/citybar.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:widget/common/ui/citybar/citybar.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/citybar/citybar.less": {
+            "uri": "/static/bigba/widget/common/ui/citybar/citybar.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/feedback/feedback.js": {
+            "uri": "/static/bigba/widget/common/ui/feedback/feedback.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/GlobalTips.js"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/multiSetmeal/setmeal.js": {
+            "uri": "/static/bigba/widget/common/ui/multiSetmeal/setmeal.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/utils/store.js",
+                "bigba:static/utils/GlobalTips.js",
+                "bigba:widget/common/ui/multiSetmeal/setmeal.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/multiSetmeal/setmeal.less": {
+            "uri": "/static/bigba/widget/common/ui/multiSetmeal/setmeal.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/muticities/muti.js": {
+            "uri": "/static/bigba/widget/common/ui/muticities/muti.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:widget/common/ui/muticities/muti.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/muticities/muti.less": {
+            "uri": "/static/bigba/widget/common/ui/muticities/muti.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/noresult/noresult.js": {
+            "uri": "/static/bigba/widget/common/ui/noresult/noresult.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/popCarousel/popCarousel.js": {
+            "uri": "/static/bigba/widget/common/ui/popCarousel/popCarousel.js",
+            "type": "js",
+            "deps": [
+                "jsmod/ui/dialog",
+                "jsmod/ui/carousel",
+                "bigba:widget/common/ui/popCarousel/popCarousel.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/popCarousel/popCarousel.less": {
+            "uri": "/static/bigba/widget/common/ui/popCarousel/popCarousel.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/search/search.js": {
+            "uri": "/static/bigba/widget/common/ui/search/search.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:static/utils/AddressDataCenter.js",
+                "bigba:widget/common/ui/search/search.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/search/search.less": {
+            "uri": "/static/bigba/widget/common/ui/search/search.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/setmeal/setmeal.js": {
+            "uri": "/static/bigba/widget/common/ui/setmeal/setmeal.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/utils/store.js",
+                "bigba:static/utils/GlobalTips.js",
+                "bigba:widget/common/ui/setmeal/setmeal.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/setmeal/setmeal.less": {
+            "uri": "/static/bigba/widget/common/ui/setmeal/setmeal.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/shopcard/shopcard.js": {
+            "uri": "/static/bigba/widget/common/ui/shopcard/shopcard.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/common/ui/shopcard/shopcard.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/shopcard/shopcard.less": {
+            "uri": "/static/bigba/widget/common/ui/shopcard/shopcard.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/topbar/topbar.js": {
+            "uri": "/static/bigba/widget/common/ui/topbar/topbar.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/common/ui/topbar/topbar.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/ui/topbar/topbar.less": {
+            "uri": "/static/bigba/widget/common/ui/topbar/topbar.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/ui/topbar/topbar.tpl": {
+            "uri": "bigba/widget/common/ui/topbar/topbar.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/common/ui/topbar/topbar.js",
+                "bigba:widget/common/ui/topbar/topbar.less"
+            ]
+        },
+        "bigba:widget/common/userinfo/UserMgr.js": {
+            "uri": "/static/bigba/widget/common/userinfo/UserMgr.js",
+            "type": "js",
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/userinfo/userInfo.less": {
+            "uri": "/static/bigba/widget/common/userinfo/userInfo.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/userinfo/userInfo.tpl": {
+            "uri": "bigba/widget/common/userinfo/userInfo.tpl",
+            "type": "tpl",
+            "extras": {
+                "async": [
+                    "bigba:widget/common/userinfo/UserMgr.js"
+                ]
+            },
+            "deps": [
+                "bigba:widget/common/userinfo/userInfo.less"
+            ]
+        },
+        "bigba:widget/common/verifyphone/verifyphone.js": {
+            "uri": "/static/bigba/widget/common/verifyphone/verifyphone.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/Template.js",
+                "jsmod/ui/pagination",
+                "bigba:static/util.js",
+                "jsmod/ui/dialog",
+                "bigba:widget/common/verifyphone/verifyphone.less"
+            ],
+            "pkg": "bigba:p0"
+        },
+        "bigba:widget/common/verifyphone/verifyphone.less": {
+            "uri": "/static/bigba/widget/common/verifyphone/verifyphone.css",
+            "type": "css",
+            "pkg": "bigba:p1"
+        },
+        "bigba:widget/common/verifyphone/verifyphone.tpl": {
+            "uri": "bigba/widget/common/verifyphone/verifyphone.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/common/verifyphone/verifyphone.js",
+                "bigba:widget/common/verifyphone/verifyphone.less"
+            ]
+        },
+        "bigba:widget/contact/banner/banner.less": {
+            "uri": "/static/bigba/widget/contact/banner/banner.css",
+            "type": "css"
+        },
+        "bigba:widget/contact/banner/banner.tpl": {
+            "uri": "bigba/widget/contact/banner/banner.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/contact/banner/banner.less"
+            ]
+        },
+        "bigba:widget/contact/feedback/feedback.js": {
+            "uri": "/static/bigba/widget/contact/feedback/feedback.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/utils/GlobalTips.js",
+                "bigba:widget/common/ui/feedback/feedback.js",
+                "bigba:widget/contact/feedback/feedback.less"
+            ]
+        },
+        "bigba:widget/contact/feedback/feedback.less": {
+            "uri": "/static/bigba/widget/contact/feedback/feedback.css",
+            "type": "css"
+        },
+        "bigba:widget/contact/feedback/feedback.tpl": {
+            "uri": "bigba/widget/contact/feedback/feedback.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/contact/feedback/feedback.js",
+                "bigba:widget/contact/feedback/feedback.less"
+            ]
+        },
+        "bigba:widget/contact/list/list.js": {
+            "uri": "/static/bigba/widget/contact/list/list.js",
+            "type": "js",
+            "deps": [
+                "jsmod/ui/dialog",
+                "bigba:widget/contact/feedback/feedback.js",
+                "bigba:widget/contact/list/list.less"
+            ]
+        },
+        "bigba:widget/contact/list/list.less": {
+            "uri": "/static/bigba/widget/contact/list/list.css",
+            "type": "css"
+        },
+        "bigba:widget/contact/list/list.tpl": {
+            "uri": "bigba/widget/contact/list/list.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/contact/list/list.js",
+                "bigba:widget/contact/list/list.less"
+            ]
+        },
+        "bigba:widget/index/bottom/bottom.js": {
+            "uri": "/static/bigba/widget/index/bottom/bottom.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/bottom/bottom.less"
+            ]
+        },
+        "bigba:widget/index/bottom/bottom.less": {
+            "uri": "/static/bigba/widget/index/bottom/bottom.css",
+            "type": "css"
+        },
+        "bigba:widget/index/bottom/bottom.tpl": {
+            "uri": "bigba/widget/index/bottom/bottom.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/bottom/bottom.js",
+                "bigba:widget/index/bottom/bottom.less"
+            ]
+        },
+        "bigba:widget/index/fengcai/fengcai.js": {
+            "uri": "/static/bigba/widget/index/fengcai/fengcai.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/fengcai/fengcai.less"
+            ]
+        },
+        "bigba:widget/index/fengcai/fengcai.less": {
+            "uri": "/static/bigba/widget/index/fengcai/fengcai.css",
+            "type": "css"
+        },
+        "bigba:widget/index/fengcai/fengcai.tpl": {
+            "uri": "bigba/widget/index/fengcai/fengcai.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/fengcai/fengcai.js",
+                "bigba:widget/index/fengcai/fengcai.less"
+            ]
+        },
+        "bigba:widget/index/filter/filter.js": {
+            "uri": "/static/bigba/widget/index/filter/filter.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/filter/filter.less"
+            ]
+        },
+        "bigba:widget/index/filter/filter.less": {
+            "uri": "/static/bigba/widget/index/filter/filter.css",
+            "type": "css"
+        },
+        "bigba:widget/index/filter/filter.tpl": {
+            "uri": "bigba/widget/index/filter/filter.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/filter/filter.js",
+                "bigba:widget/index/filter/filter.less"
+            ]
+        },
+        "bigba:widget/index/hezuo/hezuo.js": {
+            "uri": "/static/bigba/widget/index/hezuo/hezuo.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/hezuo/hezuo.less"
+            ]
+        },
+        "bigba:widget/index/hezuo/hezuo.less": {
+            "uri": "/static/bigba/widget/index/hezuo/hezuo.css",
+            "type": "css"
+        },
+        "bigba:widget/index/hezuo/hezuo.tpl": {
+            "uri": "bigba/widget/index/hezuo/hezuo.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/hezuo/hezuo.js",
+                "bigba:widget/index/hezuo/hezuo.less"
+            ]
+        },
+        "bigba:widget/index/topbar/topbar.js": {
+            "uri": "/static/bigba/widget/index/topbar/topbar.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/topbar/topbar.less"
+            ]
+        },
+        "bigba:widget/index/topbar/topbar.less": {
+            "uri": "/static/bigba/widget/index/topbar/topbar.css",
+            "type": "css"
+        },
+        "bigba:widget/index/topbar/topbar.tpl": {
+            "uri": "bigba/widget/index/topbar/topbar.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/topbar/topbar.js",
+                "bigba:widget/index/topbar/topbar.less"
+            ]
+        },
+        "bigba:widget/index/tuijian/tuijian.js": {
+            "uri": "/static/bigba/widget/index/tuijian/tuijian.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/index/tuijian/tuijian.less"
+            ]
+        },
+        "bigba:widget/index/tuijian/tuijian.less": {
+            "uri": "/static/bigba/widget/index/tuijian/tuijian.css",
+            "type": "css"
+        },
+        "bigba:widget/index/tuijian/tuijian.tpl": {
+            "uri": "bigba/widget/index/tuijian/tuijian.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/index/tuijian/tuijian.js",
+                "bigba:widget/index/tuijian/tuijian.less"
+            ]
+        },
+        "bigba:widget/layout/jslib.tpl": {
+            "uri": "bigba/widget/layout/jslib.tpl",
+            "type": "tpl"
+        },
+        "bigba:widget/selectcar/progress/progress.js": {
+            "uri": "/static/bigba/widget/selectcar/progress/progress.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/selectcar/progress/progress.less"
+            ]
+        },
+        "bigba:widget/selectcar/progress/progress.less": {
+            "uri": "/static/bigba/widget/selectcar/progress/progress.css",
+            "type": "css"
+        },
+        "bigba:widget/selectcar/progress/progress.tpl": {
+            "uri": "bigba/widget/selectcar/progress/progress.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/selectcar/progress/progress.js",
+                "bigba:widget/selectcar/progress/progress.less"
+            ]
+        },
+        "bigba:widget/selectcar/submit/submit.js": {
+            "uri": "/static/bigba/widget/selectcar/submit/submit.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/selectcar/submit/submit.less"
+            ]
+        },
+        "bigba:widget/selectcar/submit/submit.less": {
+            "uri": "/static/bigba/widget/selectcar/submit/submit.css",
+            "type": "css"
+        },
+        "bigba:widget/selectcar/submit/submit.tpl": {
+            "uri": "bigba/widget/selectcar/submit/submit.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/selectcar/submit/submit.js",
+                "bigba:widget/selectcar/submit/submit.less"
+            ]
+        },
+        "bigba:widget/selectcar/tabs/tabs.js": {
+            "uri": "/static/bigba/widget/selectcar/tabs/tabs.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/selectcar/tabs/tabs.less"
+            ]
+        },
+        "bigba:widget/selectcar/tabs/tabs.less": {
+            "uri": "/static/bigba/widget/selectcar/tabs/tabs.css",
+            "type": "css"
+        },
+        "bigba:widget/selectcar/tabs/tabs.tpl": {
+            "uri": "bigba/widget/selectcar/tabs/tabs.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/selectcar/tabs/tabs.js",
+                "bigba:widget/selectcar/tabs/tabs.less"
+            ]
+        },
+        "bigba:widget/selectcar/usecar/usecar.js": {
+            "uri": "/static/bigba/widget/selectcar/usecar/usecar.js",
+            "type": "js",
+            "deps": [
+                "bigba:static/libs/plugin/calendar/calendar.js",
+                "bigba:widget/selectcar/usecar/usecar.less"
+            ]
+        },
+        "bigba:widget/selectcar/usecar/usecar.less": {
+            "uri": "/static/bigba/widget/selectcar/usecar/usecar.css",
+            "type": "css"
+        },
+        "bigba:widget/selectcar/usecar/usecar.tpl": {
+            "uri": "bigba/widget/selectcar/usecar/usecar.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/selectcar/usecar/usecar.js",
+                "bigba:widget/selectcar/usecar/usecar.less"
+            ]
+        },
+        "bigba:widget/usercenter/menu/menu.js": {
+            "uri": "/static/bigba/widget/usercenter/menu/menu.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/usercenter/menu/menu.less"
+            ]
+        },
+        "bigba:widget/usercenter/menu/menu.less": {
+            "uri": "/static/bigba/widget/usercenter/menu/menu.css",
+            "type": "css"
+        },
+        "bigba:widget/usercenter/menu/menu.tpl": {
+            "uri": "bigba/widget/usercenter/menu/menu.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/usercenter/menu/menu.js",
+                "bigba:widget/usercenter/menu/menu.less"
+            ]
+        },
+        "bigba:widget/usercenter/order/order.js": {
+            "uri": "/static/bigba/widget/usercenter/order/order.js",
+            "type": "js",
+            "deps": [
+                "bigba:widget/usercenter/order/order.less"
+            ]
+        },
+        "bigba:widget/usercenter/order/order.less": {
+            "uri": "/static/bigba/widget/usercenter/order/order.css",
+            "type": "css"
+        },
+        "bigba:widget/usercenter/order/order.tpl": {
+            "uri": "bigba/widget/usercenter/order/order.tpl",
+            "type": "tpl",
+            "deps": [
+                "bigba:widget/usercenter/order/order.js",
+                "bigba:widget/usercenter/order/order.less"
+            ]
+        }
+    },
+    "pkg": {
+        "bigba:p0": {
+            "uri": "/static/bigba/lib.js",
+            "type": "js",
+            "has": [
+                "bigba:static/utils/GlobalErrorMonitor.js",
+                "bigba:static/utils/Cookie.js",
+                "bigba:static/utils/AddressDataCenter.js",
+                "bigba:static/utils/Browser.js",
+                "bigba:static/utils/store.js",
+                "bigba:static/utils/CartDataCenter.js",
+                "bigba:static/utils/CookieDataCenter.js",
+                "bigba:static/utils/GlobalTips.js",
+                "bigba:static/utils/LocalDataCenter.js",
+                "bigba:static/utils/SlidePlayer.js",
+                "bigba:static/utils/Template.js",
+                "bigba:static/utils/timer.js",
+                "bigba:static/plugin/Listener.js",
+                "bigba:static/plugin/ZeroClipboard.js",
+                "bigba:static/plugin/jquery.lazyload.js",
+                "bigba:static/plugin/jquery.mousewheel.js",
+                "bigba:static/plugin/jquery.placeholder.js",
+                "bigba:static/plugin/json-2.3.js",
+                "bigba:static/plugin/jssor/jssor.js",
+                "bigba:static/plugin/jssor/jssor.slider.js",
+                "bigba:static/plugin/template.js",
+                "bigba:widget/common/ui/cartAlert/cartAlert.js",
+                "bigba:widget/common/ui/citybar/citybar.js",
+                "bigba:widget/common/ui/search/search.js",
+                "bigba:widget/common/nav/nav.js",
+                "bigba:widget/common/ui/address/address.js",
+                "bigba:widget/common/ui/feedback/feedback.js",
+                "bigba:widget/common/ui/multiSetmeal/setmeal.js",
+                "bigba:widget/common/ui/muticities/muti.js",
+                "bigba:widget/common/ui/noresult/noresult.js",
+                "bigba:widget/common/ui/popCarousel/popCarousel.js",
+                "bigba:widget/common/ui/setmeal/setmeal.js",
+                "bigba:widget/common/ui/shopcard/shopcard.js",
+                "bigba:widget/common/ui/topbar/topbar.js",
+                "bigba:widget/common/userinfo/UserMgr.js",
+                "bigba:widget/common/verifyphone/verifyphone.js",
+                "bigba:page/layout.js"
+            ],
+            "deps": [
+                "bigba:static/util.js",
+                "jsmod/ui/fixElement",
+                "jsmod/ui/dialog",
+                "bigba:widget/common/ui/cartAlert/cartAlert.less",
+                "bigba:widget/common/ui/citybar/citybar.less",
+                "bigba:widget/common/ui/search/search.less",
+                "bigba:widget/common/nav/nav.less",
+                "bigba:widget/common/ui/address/address.less",
+                "bigba:widget/common/ui/multiSetmeal/setmeal.less",
+                "bigba:widget/common/ui/muticities/muti.less",
+                "jsmod/ui/carousel",
+                "bigba:widget/common/ui/popCarousel/popCarousel.less",
+                "bigba:widget/common/ui/setmeal/setmeal.less",
+                "bigba:widget/common/ui/shopcard/shopcard.less",
+                "bigba:widget/common/ui/topbar/topbar.less",
+                "jsmod/ui/pagination",
+                "bigba:widget/common/verifyphone/verifyphone.less",
+                "bigba:page/layout.less"
+            ]
+        },
+        "bigba:p1": {
+            "uri": "/static/bigba/common.css",
+            "type": "css",
+            "has": [
+                "bigba:static/css/common_color.less",
+                "bigba:static/css/common_component.less",
+                "bigba:static/css/common_dimension.less",
+                "bigba:static/css/common_mixin.less",
+                "bigba:static/css/common_style.less",
+                "bigba:static/css/globaltips.less",
+                "bigba:static/css/page.less",
+                "bigba:page/layout.less",
+                "bigba:widget/common/footer/footer.less",
+                "bigba:widget/common/nav/nav.less",
+                "bigba:widget/common/ui/address/address.less",
+                "bigba:widget/common/ui/cartAlert/cartAlert.less",
+                "bigba:widget/common/ui/citybar/citybar.less",
+                "bigba:widget/common/ui/multiSetmeal/setmeal.less",
+                "bigba:widget/common/ui/muticities/muti.less",
+                "bigba:widget/common/ui/popCarousel/popCarousel.less",
+                "bigba:widget/common/ui/search/search.less",
+                "bigba:widget/common/ui/setmeal/setmeal.less",
+                "bigba:widget/common/ui/shopcard/shopcard.less",
+                "bigba:widget/common/ui/topbar/topbar.less",
+                "bigba:widget/common/userinfo/userInfo.less",
+                "bigba:widget/common/verifyphone/verifyphone.less"
+            ]
+        }
+    }
+}

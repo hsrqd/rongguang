@@ -25,6 +25,7 @@ class fis_widget_map {
 function smarty_compiler_widget($arrParams,  $smarty){
     $strResourceApiPath = preg_replace('/[\\/\\\\]+/', '/', dirname(__FILE__) . '/FISResource.class.php');
     $strCode = '<?php if(!class_exists(\'FISResource\')){require_once(\'' . $strResourceApiPath . '\');}';
+    
     $strCall = $arrParams['call'];
     $bHasCall = isset($strCall);
     $strName = $arrParams['name'];

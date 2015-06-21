@@ -1,4 +1,4 @@
-
+<!--IE hack-->
 <!--[if IE 6]>
 <style type="text/css">
 .header .nav-item {

@@ -1,1 +1,311 @@
-var echo=function(t){console&&console.info(t)};!function(t){function n(t){var n=t.singleton,r=function(){var t=this,e=arguments;if(n){if(r.singleton)return r.singleton;r.singleton=t}return t.mixins={},i(r.mixins,function(n){n.prototype.initialize&&n.prototype.initialize.apply(t,e),n.prototype.name&&(t.mixins[n.prototype.name]=n.prototype)}),t.initialize&&t.initialize.apply(t,arguments)||t},s={};return i(c,function(n){a[n](r,t[n],n)}),e(t,function(t,n){a[t]||(s[t]=n)}),o.call(r.prototype,s),r}var e=function(n,e,i){for(var o in n)n.hasOwnProperty(o)&&e.call(i||t,o,n[o])},i=Array.prototype.forEach?function(t,n){Array.prototype.forEach.call(t||[],n)}:function(t,n){for(var e=0,i=t&&t.length||0;i>e;e++)n.call(window,t[e],e)},o=function(t,n){e(t,function(t,e){var i=this[t];i&&n===!0||(this[t]=e,"function"==typeof e&&(e.$name=t,e.$owner=this,i&&(e.$prev=i)))},this)},r=function(n){var e=t,o=n&&n.split(".")||[];return i(o,function(t){t&&(e=e[t]||(e[t]={}))}),e},s=function(){};s.mixin=function(t){return this.mixins.push(t),o.call(this.prototype,t.prototype,!0),this},s.implement=function(t){return o.call(this.prototype,t),this},s.prototype.implement=function(t){return o.call(this,t),this},s.prototype.parent=function(){var t=this.parent.caller,n=t.$prev;if(n)return n.apply(this,arguments);throw new Error("can not call parent")};var a={statics:function(t,n){e(n,function(n,e){t[n]=e})},extend:function(t,n){{var n=n||s,i=t.prototype,o=n.prototype;t.mixins=[]}n.mixins&&t.mixins.push.apply(t.mixins,n.mixins),e(n,function(n,e){t[n]=e}),e(o,function(t,n){i[t]=n}),t.superclass=i.superclass=n},mixins:function(t,n){i(n,function(n){t.mixin(n)})}},c=["statics","extend","mixins"];n.utils={object:{each:e},array:{forEach:i},ns:r},n.define=function(t,e){if(t){var i=t&&t.lastIndexOf(".")||-1;return r(-1===i?null:t.substr(0,i))[t.substr(i+1)]=new n(e)}throw new Error("empty class name!")},t.Class=n}(window),function(){Class.define("plugin.Base",{statics:{main:function(t){var n,e,i=this;t=t||{},t.$root&&(n=t.$root,delete t.$root),t.extend=i;var e=new Class(t);return new e(n)}},initialize:function(t){this.v_setRootNode(t),this.v_bindEvent()},v_eventBindType:function(){return"click focusin focusout change keyup keydown mousedown mouseup mousemove mouseout"},v_bindEvent:function(){var t=this;$(t.$root).delegate(t._v_selectot(),t.v_eventBindType(),function(n){var e=$(this);$.each(t._v_getSelectorKey(e),function(i,o){var r=o+"_"+n.type;t[r]&&(t.p_defaultEvent(n),t[r].call(t,n,e))})})},v_selector:function(){return"[id],[name],[data-name]"},_v_selectot:function(){return $.map(this.v_selector().split(","),function(t){return t.split("|")[0]}).join(",")},v_getRootNode:function(){return null},v_setRootNode:function(t){var n=this;this.$root=$(t||n.v_getRootNode()||document)},_v_getSelectorKey:function(t,n){n=n||this.v_selector().split(",");for(var e,i,o,r,s=[],a=0,c=n.length;c>a;a++)i=n[a].split("|"),r=i[0],o=i[1],t.is(r)&&(e=r.match(/\[(\w+)\]/),s.push(e&&$.inArray(e[1],["id","name","data-name"])>-1?t.attr(e[1]):o?o:r.replace(/\./g,"class_").replace(/#/g,"id_").replace(/\[(\w+)\]/g,"attr_$1").replace(/[\W]+/g,"_")));return s},p_defaultEvent:function(t){t.stopPropagation(),$(t.target).is("a")&&t.preventDefault()},find:function(t,n){return $(t,n||this.$root)}})}();
+var echo = function (msg) {
+    console && console.info(msg)
+};
+(function (global) {
+
+    var objectEach = function (obj, func, scope) {
+        for (var x in obj)
+            if (obj.hasOwnProperty(x))
+                func.call(scope || global, x, obj[x]);
+    };
+
+    var arrayEach = Array.prototype.forEach ? function (obj, func) {
+        Array.prototype.forEach.call(obj || [], func);
+    } : function (obj, func) {
+        for (var i = 0 , len = obj && obj.length || 0; i < len; i++)
+            func.call(window, obj[i], i);
+    };
+
+    var extend = function (params, notOverridden) {
+        objectEach(params, function (name, value) {
+            var prev = this[ name ];
+            if (prev && notOverridden === true)
+                return;
+            this[ name ] = value;
+            if (typeof value === 'function') {
+                value.$name = name;
+                value.$owner = this;
+                if (prev)
+                    value.$prev = prev;
+            }
+        }, this);
+    };
+
+    var ns = function (name) {
+        var part = global,
+            parts = name && name.split('.') || [];
+
+        arrayEach(parts, function (partName) {
+            if (partName) {
+                part = part[ partName ] || ( part[ partName ] = {});
+            }
+        });
+
+        return part;
+    };
+
+
+    /**
+     * @class XNative
+     * @description Base Class , All classes in XClass inherit from XNative
+     */
+
+    var XNative = function (params) {
+
+    };
+
+    /**
+     * @description mixin
+     * @static
+     * @param XNative
+     * @return self
+     */
+    XNative.mixin = function (object) {
+        this.mixins.push(object);
+        extend.call(this.prototype, object.prototype, true);
+        return this;
+    };
+
+    /**
+     * @description implement functions to class
+     * @static
+     * @param object
+     * @return self
+     */
+    XNative.implement = function (params) {
+        extend.call(this.prototype, params);
+        return this;
+    };
+
+
+    /**
+     * @description implement functions to instance
+     * @static
+     * @param object
+     * @return self
+     */
+
+    XNative.prototype.implement = function (params) {
+        extend.call(this, params);
+        return this;
+    };
+
+
+    /**
+     * @description call super class's function
+     * @return {Object}
+     */
+    XNative.prototype.parent = function () {
+        var caller = this.parent.caller ,
+            func = caller.$prev;
+        if (!func)
+            throw new Error('can not call parent');
+        else {
+            return func.apply(this, arguments);
+        }
+    };
+
+    var PROCESSOR = {
+        'statics': function (newClass, methods) {
+            objectEach(methods, function (k, v) {
+                newClass[ k ] = v;
+            });
+        },
+        'extend': function (newClass, superClass) {
+            var superClass = superClass || XNative , prototype = newClass.prototype , superPrototype = superClass.prototype;
+
+            //process mixins
+            var mixins = newClass.mixins = [];
+
+            if (superClass.mixins)
+                newClass.mixins.push.apply(newClass.mixins, superClass.mixins);
+
+            //process statics
+            objectEach(superClass, function (k, v) {
+                newClass[ k ] = v;
+            })
+
+            //process prototype
+            objectEach(superPrototype, function (k, v) {
+                prototype[ k ] = v;
+            });
+
+            newClass.superclass = prototype.superclass = superClass;
+        },
+        'mixins': function (newClass, value) {
+
+            arrayEach(value, function (v) {
+                newClass.mixin(v);
+            });
+        }
+    };
+
+    var PROCESSOR_KEYS = ['statics', 'extend', 'mixins'];
+
+    /**
+     * @class XClass
+     * @description Class Factory
+     * @param  {Object} params
+     * @return {Object} object ：New Class
+     * @example new XClass({
+     *     statics : {
+     *         static_method : function(){}
+     *     },
+     *     method1 : function(){},
+     *     method2 : function(){},
+     *     extend : ExtendedClass,
+     *     mixins : [ MixedClass1 , MixedClass2 ],
+     *     singleton : false
+     * });
+     */
+    function XClass(params) {
+
+        var singleton = params.singleton;
+
+        var XClass = function () {
+            var me = this , args = arguments;
+
+            if (singleton)
+                if (XClass.singleton)
+                    return XClass.singleton;
+                else
+                    XClass.singleton = me;
+
+            me.mixins = {};
+
+            arrayEach(XClass.mixins, function (mixin) {
+                mixin.prototype.initialize && mixin.prototype.initialize.apply(me, args);
+
+                if (mixin.prototype.name)
+                    me.mixins[ mixin.prototype.name ] = mixin.prototype;
+
+            });
+            return me.initialize && me.initialize.apply(me, arguments) || me;
+        };
+
+
+        var methods = {};
+
+        arrayEach(PROCESSOR_KEYS, function (key) {
+            PROCESSOR[ key ](XClass, params[ key ], key);
+        });
+
+        objectEach(params, function (k, v) {
+            if (!PROCESSOR[ k ])
+                methods[ k ] = v;
+        });
+
+        extend.call(XClass.prototype, methods);
+
+        return XClass;
+    }
+
+    XClass.utils = {
+        object: {
+            each: objectEach
+        },
+        array: {
+            forEach: arrayEach
+        },
+        ns: ns
+    };
+
+    XClass.define = function (className, params) {
+        if (className) {
+            var lastIndex = className && className.lastIndexOf('.') || -1 , newClass;
+            return ns(lastIndex === -1 ? null : className.substr(0, lastIndex))[ className.substr(lastIndex + 1) ] = new XClass(params);
+        } else
+            throw new Error('empty class name!');
+    };
+
+    global.Class = XClass;
+
+})(window);
+(function () {
+    Class.define("plugin.Base", {
+        statics: {
+            main: function (param) {
+                var _self = this, root, _class;
+                param = param || {};
+                if (param.$root) {
+                    root = param.$root;
+                    delete param.$root;
+                }
+                param.extend = _self;
+                var _class = new Class(param);
+                return new _class(root);
+            }
+        },
+        initialize: function (root) {
+            this.v_setRootNode(root);
+            this.v_bindEvent();
+        },
+        //要绑定代理的方法
+        v_eventBindType: function () {
+            return "click focusin focusout change keyup keydown mousedown mouseup mousemove mouseout";
+        },
+        //绑定代理
+        v_bindEvent: function () {
+            var self = this;
+            $(self.$root).delegate(self._v_selectot(), self.v_eventBindType(), function (e) {
+                var el = $(this);
+                $.each(self._v_getSelectorKey(el), function (i, _key) {
+                    var key = _key + "_" + e.type;
+                    if (self[key]) {
+                        self.p_defaultEvent(e);
+                        self[key].call(self, e, el);
+                    }
+                });
+            });
+        },
+        v_selector: function () {
+            return "[id],[name],[data-name]";
+        },
+        _v_selectot: function () {
+            return $.map(this.v_selector().split(","),function (s) {
+                return s.split("|")[0];
+            }).join(",");
+        },
+        v_getRootNode: function () {
+            return null;
+        },
+        v_setRootNode: function (doc) {
+            var self = this;
+            this.$root = $(doc || self.v_getRootNode() || document);
+        },
+        _v_getSelectorKey: function (el, selectors) {
+            selectors = selectors || this.v_selector().split(",");
+            var _match, key = [], _kv, _alias, _selector;
+            for (var i = 0, len = selectors.length; i < len; i++) {
+                _kv = selectors[i].split("|");
+                _selector = _kv[0];
+                _alias = _kv[1];
+                if (el.is(_selector)) {
+                    _match = _selector.match(/\[(\w+)\]/);
+                    if (_match && $.inArray(_match[1], ["id", "name", "data-name"]) > -1) {
+                        key.push(el.attr(_match[1]));
+                    }
+                    else if (_alias) {
+                        key.push(_alias);
+                    }
+                    else {
+                        key.push(_selector
+                            .replace(/\./g, "class_")
+                            .replace(/#/g, "id_")
+                            .replace(/\[(\w+)\]/g, "attr_$1")
+                            .replace(/[\W]+/g, "_"));
+                    }
+                    //return key;
+                }
+            }
+            return key;
+        },
+        p_defaultEvent: function (e) {
+            e.stopPropagation();
+            if ($(e.target).is("a")) e.preventDefault();
+        },
+        find: function (selector, root) {
+            return $(selector, root || this.$root);
+        }
+    });
+})();

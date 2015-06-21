@@ -1,1 +1,324 @@
-.x-a-none{text-decoration:none}.x-a-none:hover,.x-a-none:active{text-decoration:none}.widget-selectcar-usecar{*zoom:1;*overflow:hidden;width:940px;margin:0 auto;padding:10px}.widget-selectcar-usecar:after,.widget-selectcar-usecar:before{display:table;content:""}.widget-selectcar-usecar:after{clear:both}.widget-selectcar-usecar .tit-con{font-size:22px;line-height:54px;padding:0 15px;height:54px;background:#ececec;color:#999;cursor:pointer}.widget-selectcar-usecar .content-box{padding:10px 0}.widget-selectcar-usecar .content-box .con-table{margin:30px 10px;font-size:20px}.widget-selectcar-usecar .content-box .con-table th{text-align:right;font-weight:400}.widget-selectcar-usecar .content-box .con-table th,.widget-selectcar-usecar .content-box .con-table td{vertical-align:top;padding:5px}.widget-selectcar-usecar .content-box .con-table input,.widget-selectcar-usecar .content-box .con-table select,.widget-selectcar-usecar .content-box .con-table textarea{border:1px solid #ececec;color:#666;font-size:16px;padding:6px;margin:0 6px 0 0}.widget-selectcar-usecar .content-box .con-table .subtips{font-size:12px}.widget-selectcar-usecar .content-box .con-table .code-btn{display:inline-block;width:120px;height:32px;padding:0;border:0;text-align:center;zoom:1;*display:inline;-webkit-transition:background-color .2s ease-in 0s;-moz-transition:background-color .2s ease-in 0s;-o-transition:background-color .2s ease-in 0s;transition:background-color .2s ease-in 0s;-moz-border-radius:2px;border-radius:2px;font-size:1em;color:#fff;background-color:#f67f26;cursor:pointer;font-size:14px}.widget-selectcar-usecar .content-box .con-table .code-btn.versa{background-color:#666}.widget-selectcar-usecar .content-box .con-table .code-btn.versa:hover{background-color:#5c5c5c}.widget-selectcar-usecar .content-box .con-table .code-btn:hover{background-color:#904606}.widget-selectcar-usecar .content-box .con-table .code-btn.disable,.widget-selectcar-usecar .content-box .con-table .code-btn.disabled{background-color:#888;cursor:default}.widget-selectcar-usecar .content-box .con-table .submit-btn{display:inline-block;width:200px;height:40px;padding:0;border:0;text-align:center;zoom:1;*display:inline;-webkit-transition:background-color .2s ease-in 0s;-moz-transition:background-color .2s ease-in 0s;-o-transition:background-color .2s ease-in 0s;transition:background-color .2s ease-in 0s;-moz-border-radius:2px;border-radius:2px;font-size:1em;color:#fff;background-color:#f67f26;cursor:pointer;font-size:20px}.widget-selectcar-usecar .content-box .con-table .submit-btn.versa{background-color:#666}.widget-selectcar-usecar .content-box .con-table .submit-btn.versa:hover{background-color:#5c5c5c}.widget-selectcar-usecar .content-box .con-table .submit-btn:hover{background-color:#904606}.widget-selectcar-usecar .content-box .con-table .submit-btn.disable,.widget-selectcar-usecar .content-box .con-table .submit-btn.disabled{background-color:#888;cursor:default}.widget-selectcar-usecar .content-box .success-con{width:500px;text-align:center;margin:0 auto}.widget-selectcar-usecar .content-box .success-con .btxt{color:#ee7113;font-size:22px}.widget-selectcar-usecar .content-box .success-con .stxt{font-size:14px}.widget-selectcar-usecar .content-box .success-con .gores-btn{display:inline-block;width:200px;height:40px;padding:0;border:0;text-align:center;zoom:1;*display:inline;-webkit-transition:background-color .2s ease-in 0s;-moz-transition:background-color .2s ease-in 0s;-o-transition:background-color .2s ease-in 0s;transition:background-color .2s ease-in 0s;-moz-border-radius:2px;border-radius:2px;font-size:1em;color:#fff;background-color:#f67f26;cursor:pointer;font-size:20px}.widget-selectcar-usecar .content-box .success-con .gores-btn.versa{background-color:#666}.widget-selectcar-usecar .content-box .success-con .gores-btn.versa:hover{background-color:#5c5c5c}.widget-selectcar-usecar .content-box .success-con .gores-btn:hover{background-color:#904606}.widget-selectcar-usecar .content-box .success-con .gores-btn.disable,.widget-selectcar-usecar .content-box .success-con .gores-btn.disabled{background-color:#888;cursor:default}.widget-selectcar-usecar .content-box .success-con .btn-con{margin:40px 0}.widget-selectcar-usecar .divider{*zoom:1;*overflow:hidden}.widget-selectcar-usecar .divider:after,.widget-selectcar-usecar .divider:before{display:table;content:""}.widget-selectcar-usecar .divider:after{clear:both}.widget-selectcar-usecar .fr{float:right}
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+.widget-selectcar-usecar {
+  *zoom: 1;
+  *overflow: hidden;
+  width: 940px;
+  margin: 0px auto;
+  padding: 10px;
+}
+.widget-selectcar-usecar:after,
+.widget-selectcar-usecar:before {
+  display: table;
+  content: "";
+}
+.widget-selectcar-usecar:after {
+  clear: both;
+}
+.widget-selectcar-usecar .tit-con {
+  font-size: 22px;
+  line-height: 54px;
+  padding: 0 15px;
+  height: 54px;
+  background: #ececec;
+  color: #999999;
+  cursor: pointer;
+}
+.widget-selectcar-usecar .content-box {
+  padding: 10px 0;
+}
+.widget-selectcar-usecar .content-box .con-table {
+  margin: 30px 10px;
+  font-size: 20px;
+}
+.widget-selectcar-usecar .content-box .con-table th {
+  text-align: right;
+  font-weight: normal;
+}
+.widget-selectcar-usecar .content-box .con-table th,
+.widget-selectcar-usecar .content-box .con-table td {
+  vertical-align: top;
+  padding: 5px;
+}
+.widget-selectcar-usecar .content-box .con-table input,
+.widget-selectcar-usecar .content-box .con-table select,
+.widget-selectcar-usecar .content-box .con-table textarea {
+  border: 1px solid #ececec;
+  color: #666666;
+  font-size: 16px;
+  padding: 6px;
+  margin: 0 6px 0 0;
+}
+.widget-selectcar-usecar .content-box .con-table .subtips {
+  font-size: 12px;
+}
+.widget-selectcar-usecar .content-box .con-table .code-btn {
+  display: inline-block;
+  width: 120px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  -moz-transition: background-color 0.2s ease-in 0s;
+  -o-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #f67f26;
+  cursor: pointer;
+  /*取消类按钮*/
+  /*hover样式*/
+  /*不可点击态*/
+  font-size: 14px;
+}
+.widget-selectcar-usecar .content-box .con-table .code-btn.versa {
+  background-color: #666666;
+}
+.widget-selectcar-usecar .content-box .con-table .code-btn.versa:hover {
+  background-color: #5c5c5c;
+}
+.widget-selectcar-usecar .content-box .con-table .code-btn:hover {
+  background-color: #904606;
+}
+.widget-selectcar-usecar .content-box .con-table .code-btn.disable,
+.widget-selectcar-usecar .content-box .con-table .code-btn.disabled {
+  background-color: #888888;
+  cursor: default;
+}
+.widget-selectcar-usecar .content-box .con-table .submit-btn {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  -moz-transition: background-color 0.2s ease-in 0s;
+  -o-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #f67f26;
+  cursor: pointer;
+  /*取消类按钮*/
+  /*hover样式*/
+  /*不可点击态*/
+  font-size: 20px;
+}
+.widget-selectcar-usecar .content-box .con-table .submit-btn.versa {
+  background-color: #666666;
+}
+.widget-selectcar-usecar .content-box .con-table .submit-btn.versa:hover {
+  background-color: #5c5c5c;
+}
+.widget-selectcar-usecar .content-box .con-table .submit-btn:hover {
+  background-color: #904606;
+}
+.widget-selectcar-usecar .content-box .con-table .submit-btn.disable,
+.widget-selectcar-usecar .content-box .con-table .submit-btn.disabled {
+  background-color: #888888;
+  cursor: default;
+}
+.widget-selectcar-usecar .content-box .success-con {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.widget-selectcar-usecar .content-box .success-con .btxt {
+  color: #ee7113;
+  font-size: 22px;
+}
+.widget-selectcar-usecar .content-box .success-con .stxt {
+  font-size: 14px;
+}
+.widget-selectcar-usecar .content-box .success-con .gores-btn {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  -moz-transition: background-color 0.2s ease-in 0s;
+  -o-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #f67f26;
+  cursor: pointer;
+  /*取消类按钮*/
+  /*hover样式*/
+  /*不可点击态*/
+  font-size: 20px;
+}
+.widget-selectcar-usecar .content-box .success-con .gores-btn.versa {
+  background-color: #666666;
+}
+.widget-selectcar-usecar .content-box .success-con .gores-btn.versa:hover {
+  background-color: #5c5c5c;
+}
+.widget-selectcar-usecar .content-box .success-con .gores-btn:hover {
+  background-color: #904606;
+}
+.widget-selectcar-usecar .content-box .success-con .gores-btn.disable,
+.widget-selectcar-usecar .content-box .success-con .gores-btn.disabled {
+  background-color: #888888;
+  cursor: default;
+}
+.widget-selectcar-usecar .content-box .success-con .btn-con {
+  margin: 40px 0;
+}
+.widget-selectcar-usecar .divider {
+  *zoom: 1;
+  *overflow: hidden;
+}
+.widget-selectcar-usecar .divider:after,
+.widget-selectcar-usecar .divider:before {
+  display: table;
+  content: "";
+}
+.widget-selectcar-usecar .divider:after {
+  clear: both;
+}
+.widget-selectcar-usecar .fr {
+  float: right;
+}

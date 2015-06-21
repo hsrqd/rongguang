@@ -1,1 +1,208 @@
-.x-a-none{text-decoration:none}.x-a-none:hover,.x-a-none:active{text-decoration:none}.global-tips{z-index:3000;height:40px;color:#fff;background-color:#333;width:400px;line-height:40px;font-size:.8em;text-align:center;opacity:.6;filter:alpha(opacity=60);-moz-border-radius:2px;border-radius:2px;font-family:"Microsoft Yahei UI","Microsoft YaHei",Helvetica,Arial,sans-serif}.global-tips.reverse{color:#333;background-color:#fff;opacity:1;filter:alpha(opacity=100)}.breadcrumb{font-size:14px;color:#333;font-weight:400;text-decoration:none;margin-bottom:15px}.breadcrumb a{color:#333;text-decoration:none}.breadcrumb .highlight{font-weight:700}a{text-decoration:none}a:hover,a:active{text-decoration:none}.gt-show{top:0!important}input:focus,textarea:focus,button:focus{outline:0}.placeholder{color:#ccc!important}::-webkit-input-placeholder{color:#ccc}:-moz-placeholder{color:#ccc}::-moz-placeholder{color:#ccc}:-ms-input-placeholder{color:#ccc}.sec-top{width:940px}h2.tit{font-size:24px;border-left:4px solid #ff6000;padding:0 0 0 4px;float:left}
+/**
+ * 颜色变量
+ * @author gaochao
+ */
+/* 默认宽度 开始*/
+/**
+ * 按钮的样式
+ * @param {string} @width  按钮宽度
+ * @param {string} @height 按钮高度
+ */
+/**
+ * 图标样式
+ * @param {string} width icon宽度
+ * @param {string} height icon高度
+ * @param {string} margin-right 右外边距
+ */
+/**
+ * 图标箭头样式
+ * @param {string} height 箭头方向 t r b l 分别对应 上 右 下 左
+ * @param {string} width 宽度
+ * @param {string} color 颜色
+ */
+/**
+ * 颜色渐变
+ * @param {string} fromColor 颜色 
+ * @param {string} toColor 颜色
+ */
+/**
+ * input
+ * @param {string} width
+ * @param {string} height
+ */
+/*包含3态的按钮*/
+/**
+ * 公用函数
+ * @author gaochao
+ */
+/* clearfix less实现 */
+/* 雅黑字体 */
+/* inline-block */
+/**
+ * css3动画
+ * @param {string} @property 需要动画的属性，默认all
+ * @param {string} @duration 持续时间，默认1s
+ * @param {string} @timing-function 动画函数，默认ease-in
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 旋转
+ * @param {string} @deg 旋转角度，默认0deg
+ */
+/**
+ * css3动画 缩放
+ * @param {Number} @x 缩放比例
+ * @param {Number} @y 缩放比例
+ */
+/**
+ * 透明度
+ * @param {int} @opacity 透明度
+ */
+/**
+ * min-height
+ * @param {string} @height 
+ */
+/**
+ * 页面模块下边距,默认为20px
+ * .basic-info {
+ *   .layout-bottom; 默认值
+ *   .layout-bottom(30px); 传入参数
+ * }
+ */
+/**
+ * 边框背景设置
+ * @param {String} bd-color 边框颜色
+ * @param {String} bg-color 背景颜色
+ */
+/**
+ * 字体相关设置
+ * @param {String} font-size 大小
+ * @param {String} font-weight 粗细
+ * @param {String} color 字体颜色
+ */
+/**
+ * 圆角设置
+ * @param {String} size 大小
+ */
+/**
+* 背景透明
+* @param {Number} red 红色值0-255
+* @param {Number} green 红色值0-255
+* @param {Number} blue 红色值0-255
+* @param {Number} alpha 红色值0-1
+*/
+/**
+ * 阴影效果
+ * @param {String} x 水平位移
+ * @param {String} y 垂直位置
+ * @param {String} r 模糊半径
+ * @param {String} c 颜色
+ * @param {String} l 阴影尺寸
+ */
+/**
+ * 关闭按钮
+ * @param {String} size 大小
+ * @param {String} color 颜色
+ * @param {String} hoverColor hover颜色
+ */
+/**
+* landing页面输入框等元素高度
+* @param {string} height 高度
+* @param {string} line-height 行高
+*/
+/**
+* a无text-decoration
+*/
+.x-a-none {
+  text-decoration: none;
+}
+.x-a-none:hover,
+.x-a-none:active {
+  text-decoration: none;
+}
+/**
+ * 前缀宏代换
+ **/
+/* 分页 结束*/
+.global-tips {
+  z-index: 3000;
+  height: 40px;
+  color: #fff;
+  background-color: #333;
+  width: 400px;
+  line-height: 40px;
+  font-size: .8em;
+  text-align: center;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "Microsoft Yahei UI", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+}
+.global-tips.reverse {
+  color: #333;
+  background-color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*面包屑*/
+.breadcrumb {
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.breadcrumb a {
+  color: #333333;
+  text-decoration: none;
+}
+.breadcrumb .highlight {
+  font-weight: bold;
+}
+/**
+ * 去除a标签的hover下划线
+ */
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.gt-show {
+  top: 0px !important;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.placeholder {
+  color: #ccc !important;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder {
+  color: #ccc;
+}
+::-moz-placeholder {
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+/*相对通用的样式*/
+.sec-top {
+  width: 940px;
+}
+h2.tit {
+  font-size: 24px;
+  border-left: 4px solid #ff6000;
+  padding: 0 0 0 4px;
+  float: left;
+}

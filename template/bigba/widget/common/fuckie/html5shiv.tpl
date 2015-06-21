@@ -1,4 +1,4 @@
-
+<!--IE html5 标签支持-->
 <!--[if lt IE 9]>
 <style type="text/css">
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
